@@ -28,9 +28,9 @@ mermaid: true
 
 이미지 테스트중중중
 
-![image.png](/\assets\img\image.png)
+![image.png](/\assets\img\favicons\image.png)
 
-![image-2.png](/\assets\img\image-2.png)
+![image-2.png](/\assets\img\favicons\image-2.png)
 
 ## Dataset의 정의
 
