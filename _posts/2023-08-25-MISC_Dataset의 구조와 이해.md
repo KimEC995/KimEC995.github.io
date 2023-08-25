@@ -1,25 +1,14 @@
 ---
-title: Jupyter Notebook 파일 업로드 테스트
+title: Dataset의 구조와 이해
 author: Kimec995
 date: 2023-08-25 08:38:00 +09:00
-categories: [Blogging, Demo]
-tags: [ipynb]
+categories: [MachineLearning]
+tags: [MachineLearning, Dataset, ML_Concept]
 pin: true
 math: true
 mermaid: true
 ---
-# 목차
-
-목차테스트 - 문서 내부 링크 만들기
-
-1. [Dataset의 구조와 이해](#dataset의-구조와-이해)
-
-2. [머신러닝에서 데이터 셋 활용하기](#머신러닝에서-데이터-셋-활용하기)
-
----
-
 # Dataset의 구조와 이해
-
 
 머신러닝을 배우기 위해 Scikit-Learn 라이브러리를 공부하고 있다.
 해당 라이브러리에는 기본으로 제공하는 Dataset들이 있는데 처음 보는 구조이다.
@@ -63,7 +52,7 @@ mermaid: true
 구조화 된 경우는[데이터베이스 / CSV / 테이블] 등이 있고 \
 비구조화 된 경우는[텍스트 / 이미지] 등 형태가 있다.
 
-# 머신러닝에서 데이터 셋 활용하기
+## 머신러닝에서 데이터 셋 활용하기
 
 Scikit-Learn 라이브러리에서 빌트인 데이터 셋은 `sklearn.utils.Bunch` 라는 구조로 활용한다.
 
