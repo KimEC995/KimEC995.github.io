@@ -29,11 +29,11 @@ mermaid: true
 이미지 테스트중중중
 
 - 테스트1 : 깃 링크
-![image.png](assets/img/favicons/Testimg.png)
+![image.png](/assets/img/favicons/Testimg.png)
 
 
-- 테스트2 : url 링크
-![image-2.png](https://github.com/KimEC995/KimEC995.github.io/blob/main/assets/img/favicons/Testimg.png)
+- 테스트2 : 폴더내부이동
+![image-2.png](\assets\img\postimg\testimg-2.png)
 
 ## Dataset의 정의
 
