@@ -3,7 +3,7 @@ title: Dataset의 구조와 이해
 author: Kimec995
 date: 2023-08-25 08:38:00 +09:00
 categories: [MachineLearning]
-tags: [MachineLearning, Dataset, ML_Concept]
+tags: [MachineLearning, Dataset, Concept]
 pin: true
 math: true
 mermaid: true
