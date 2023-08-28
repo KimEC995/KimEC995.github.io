@@ -60,7 +60,7 @@ mermaid: true
 
 ### 시도했던 방법은(실패)
 
-- _config 파일의 theme_mode: # [light|dark] 를 `dark` 만 수행
+- `_config` 파일의 theme_mode: # [light|dark] 를 `dark` 만 수행
     - 이유: switcher 코드자체에는 문제가 없었을 것. 로컬에선 잘 됐으니까. 아마 웹에서 theme 설정 기본값이 코드 내부에 충돌해 이런 문제가 생겼다고 판단.
 
 <br>
