@@ -1,8 +1,8 @@
 ---
 title: MTV vs MVC
 author: Kimec995
-date: 2023-08-10 08:38:00 +09:00
-categories: [WebFrameWork/Concept]
+date: 2023-08-28 09:00:00 +09:00
+categories: [WebFrameWork]
 tags: [WebFrameWork, Concept, MTV, MVC, Pattern]
 pin: true
 math: true
