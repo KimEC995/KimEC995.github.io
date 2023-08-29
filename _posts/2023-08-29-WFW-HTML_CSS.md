@@ -8,7 +8,6 @@ pin: true
 math: true
 mermaid: true
 ---
-
 # TIL : HTTP와 CSS 기본02
 > 01은 정리 안했다!!
 
@@ -34,7 +33,7 @@ mermaid: true
 1. CSS Link를 `head.html` 에 적용시킴
 
 
-```python
+```html
 <!-- head.html -->
 <head>
     <meta charset="UTF-8">
@@ -63,7 +62,7 @@ mermaid: true
 4. 원하는 CSS 위치에 `fontfamily: 'xxx','xxx'` 적용
 
 
-```python
+```html
 <!-- head.html -->
 <head>
     <meta charset="UTF-8">
@@ -81,7 +80,7 @@ mermaid: true
 ```
 
 
-```python
+```html
 <div class="Main_align">
     <div>
         <h1 style="font-family:'Lobster', cursive;">
@@ -144,30 +143,31 @@ STATICFILES_DIRS = [
 
 5. 단 클래스 선언은 `.` 으로 한다.
 
-
-```HTML
+```html
 <!-- base.css -->
-.pragmatic_footer_logo{
+. pragmatic_footer_logo{
     font-family: 'Lobster', cursive;
 }
 ```
 
 6. `base.css`를 해당 `.html` 내부에 선언
     1. 링크를 선언하는 `head.html` 최상단에
-    2. `{% load static(`.css` 파일 디렉토리명) %}` 추가
+    2. .css 파일 로드 코드 추가
     3. 하단에 아래와 같이 추가
 
-
-```HTML
-{% load static(`.css` 파일 디렉토리명) %}
+```html
+{% raw %}
+{% load static(.css 파일명) %}
 
 <!-- Default css Link -->
-<link rel="stylesheet" type="text/css" href="{% static 'base.css' %}"
+<link rel="stylesheet" type="text/css" href="{% static 'base.css %}">
+{% endraw %}
 ```
+
 
 이제 `.css` 파일 내부에 `style` 들을 집합시킬 수 있다.
 
-### 전체 흐름을 정리하자면,
+### 전체 흐름을 정리하자면
 
 1. `settings.py` 에서 `static` 선언 -> 이로써 `.html`과 `.css` 를 연결시킬 수 있다.
 
@@ -207,7 +207,7 @@ HTML을 꾸미는 디자인 언어 묶음
 - rem <------ 제일 많이 씀
 - %
 
-![SIZE_Attribute.png](../assets/img/230829_Django_files/image.png)
+![SIZE-Attribute.png](\assets\img\postimg\SIZE-Attribute.png)
 [이미지출처](https://smazee.com/blog/css-units-px-em-rem-vh-vw-vmin-vmax)
 
 
@@ -216,7 +216,7 @@ HTML을 꾸미는 디자인 언어 묶음
 `.html` 파일 내부에서 Class 선언도 가능함
 
 
-```HTML
+```html
 <style>
     .testing{
         background-color: white

@@ -59,7 +59,7 @@ MVC 와 MTV , 아주아주 비슷하지만 정말 약간만 다른, 실질적으
 
 일단 들어가기 전, MTV 모델을 설명하는 이미지를 보며 이해해보자.
 
-![image-2.png](\assets\img\2023-08-10_WebFrameWork_Concept_MTVvsMVC\image-2.png)
+![image-2.png](\assets\img\postimg\MTV-arct.png)
 
 우선 순번을 생각하면.
 
@@ -122,7 +122,7 @@ Model은 Database 그 자체가 아니다. Database 내부의 Table 에 좀 더 
 
 데이터의 형태에 따라 데이터 필드를 정의한다.
 
-![image.png](\assets\img\2023-08-10_WebFrameWork_Concept_MTVvsMVC\image.png)
+![image.png](\assets\img\postimg\MTV-arct.png)
 출처: Model field reference
 
 정의를 완료했다면 Model을 바탕으로 Database에 만들어 줘야 한다.
@@ -141,7 +141,7 @@ View 는 사용자에게 \[보여지는 것\] 이다.
 
 HTML 파일과 데이터들이 렌더되어 보여지는 것이다.
 
-![image-2.png](\assets\img\2023-08-10_WebFrameWork_Concept_MTVvsMVC\image-2.png)
+![image-2.png](\assets\img\postimg\django-Template-sample.png)
 
 이 그림처럼 View(Template) 는 오직 Controller(View) 를 통해서만 Response할 수 있다.
 
