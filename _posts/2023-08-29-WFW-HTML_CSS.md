@@ -154,7 +154,7 @@ STATICFILES_DIRS = [
 
 6. `base.css`를 해당 `.html` 내부에 선언
     1. 링크를 선언하는 `head.html` 최상단에
-    2. {% load static(`.css` 파일 디렉토리명) %} 추가
+    2. `{% load static(`.css` 파일 디렉토리명) %}` 추가
     3. 하단에 아래와 같이 추가
 
 
