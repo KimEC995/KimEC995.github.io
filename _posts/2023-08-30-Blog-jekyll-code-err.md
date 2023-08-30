@@ -1,5 +1,5 @@
 ---
-title: GitBlog Error - Local vs Web
+title: GitBlog Error - Jekyll Markdown Code Err
 author: Kimec995
 date: 2023-08-30 10:00:00 +09:00
 categories: [GitBlog, Error]
