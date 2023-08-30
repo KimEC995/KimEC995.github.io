@@ -122,8 +122,8 @@ Model은 Database 그 자체가 아니다. Database 내부의 Table 에 좀 더 
 
 데이터의 형태에 따라 데이터 필드를 정의한다.
 
-![image.png](\assets\img\postimg\MTV-arct.png)
-출처: Model field reference
+![image.png](\assets\img\postimg\Database-Field.png)
+출처: Model field reference 를 [강사님 수정-링크](https://dschloe.github.io/)
 
 정의를 완료했다면 Model을 바탕으로 Database에 만들어 줘야 한다.
 

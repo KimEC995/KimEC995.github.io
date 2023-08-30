@@ -2,7 +2,7 @@
 title: 문자열 에러(django-environ 충돌)
 author: Kimec995
 date: 2023-08-29 16:10:00 +09:00
-categories: [WebFrameWork]
+categories: [WebFrameWork, Error]
 tags: [WebFrameWork, Django, Error]
 pin: true
 math: true

@@ -2,7 +2,7 @@
 title: GitBlog Error - Local vs Web
 author: Kimec995
 date: 2023-08-28 11:05:00 +09:00
-categories: [GitBlog]
+categories: [GitBlog, Error]
 tags: [GitBlog, Error, Chirpy, Jekyll]
 pin: true
 math: true
