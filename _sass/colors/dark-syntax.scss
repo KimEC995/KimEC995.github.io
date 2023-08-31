@@ -4,13 +4,13 @@
 
 @mixin dark-syntax {
   --language-border-color: rgba(84, 83, 83, 0.27);
-  --highlight-bg-color: #252525;
-  --highlighter-rouge-color: #ff6e4e;
-  --highlight-lineno-color: #666666;
-  --inline-code-bg: #272822;
-  --code-header-text-color: #6a6a6a;
-  --code-header-muted-color: rgb(60, 60, 60);
-  --code-header-icon-color: rgb(86, 86, 86);
+  --highlight-bg-color: #2b1d38ff;
+  --highlighter-rouge-color: #f38150ff;
+  --highlight-lineno-color: #2b1d38ff;
+  --inline-code-bg: #2b1d38ff;
+  --code-header-text-color: #444674ff;
+  --code-header-muted-color: #444674ff;
+  --code-header-icon-color: #444674ff;
   --clipboard-checked-color: #2bcc2b;
   --filepath-text-color: #cacaca;
   --code-snippets-color: #c2c2c2;
