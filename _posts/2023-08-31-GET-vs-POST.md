@@ -1,5 +1,5 @@
 ---
-title: GitBlog Error - GET 방식과 POST 방식의 차이와 구분
+title: GET 방식과 POST 방식의 차이와 구분
 author: Kimec995
 date: 2023-08-31 11:13:00 +09:00
 categories: [HTML]
