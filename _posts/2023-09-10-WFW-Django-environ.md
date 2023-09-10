@@ -1,3 +1,14 @@
+---
+title: Django 에서 환경 관리하기 - Django_Environ
+author: Kimec995
+date: 2023-09-10 18:21:00 +09:00
+categories: [WebFrameWork]
+tags: [WebFrameWork, Django, environ, 장고, 환경설정]
+pin: true
+math: true
+mermaid: true
+---
+
 # Django 에서 환경 관리하기 - Django_Environ
 
 
@@ -76,7 +87,7 @@ REDIS_URL=rediscache://127.0.0.1:6379/1?client_class=django_redis.client.Default
 touch .env
 ```
 
-![image.png](/\assets\img\postimg\230910-Djang-Environ-01.png)
+![image.png](\assets\img\postimg\230910-Djang-Environ-01.png)
 
 해당 폴더에 위 코드를 복사한 후, 알맞게 채워주자.
 
