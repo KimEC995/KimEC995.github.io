@@ -1,7 +1,7 @@
 ---
 title: Django 에서 CSV 파일 읽기
 author: Kimec995
-date: 2023-09-11 18:21:00 +09:00
+date: 2023-09-11 00:21:00 +09:00
 categories: [WebFrameWork]
 tags: [WebFrameWork, Django, environ, 장고, 환경설정, CSV, Database]
 pin: true
