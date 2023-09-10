@@ -9,9 +9,6 @@ math: true
 mermaid: true
 ---
 
-# Django 에서 환경 관리하기 - Django_Environ
-
-
 [Django Environ Documentation](https://django-environ.readthedocs.io/en/latest/quickstart.html)
 
 장고 프로젝트를 시작하면 기본 `settings.py` 내부에 이런 코드가 들어있다.
@@ -36,20 +33,13 @@ Django에서 서버를 동작할 때 사용하는 비밀 키가 들어있는데,
 가상환경 내에서 장고를 인스톨 한 후, environ을 인스톨 한다.
 
 
-```python
+```gitbash
 $ pip install django
-```
 
-
-```python
 $ pip install django-environ
-```
 
-
-```python
 $ pip freeze
 ```
-
 
 ```python
 Django==4.2.5
@@ -328,3 +318,17 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 가끔 DATABASE 등 패스타입으로 제공받아야 하는 코드들이 충돌을 일으키니 주의하자.
 
 [해결방법](https://kimec995.github.io/posts/ERR-Django-environ/)
+
+
+### 주의2!
+
+```python
+# .env
+
+DEBUG=on
+SECRET_KEY=django-insecure-0)qwdqwdas
+```
+
+여기서 
+1. `=` 앞 뒤로 띄어쓰기 하지 않기
+2. 값 넣을때 `' '` 사용하지 않기.
