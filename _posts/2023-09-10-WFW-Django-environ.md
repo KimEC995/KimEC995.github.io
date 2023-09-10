@@ -87,7 +87,7 @@ REDIS_URL=rediscache://127.0.0.1:6379/1?client_class=django_redis.client.Default
 touch .env
 ```
 
-![image.png](\assets\img\postimg\230910-Djang-Environ-01.png)
+![Djang_Environ01.png](\assets\img\postimg\Djang_Environ01.png)
 
 해당 폴더에 위 코드를 복사한 후, 알맞게 채워주자.
 
