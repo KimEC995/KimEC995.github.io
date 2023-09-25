@@ -1,5 +1,5 @@
 ---
-title: Django 에서 CSV 파일 읽기 
+title: Django 에서 CSV 파일 읽기1 
 author: Kimec995
 date: 2023-09-11 00:21:00 +09:00
 categories: [WebFrameWork, DataBase]
@@ -36,7 +36,7 @@ mermaid: true
 
 [CSV 예제 - Kaggle: Goodreads](https://www.kaggle.com/datasets/jealousleopard/goodreadsbooks)
 
-![Djangoimportcsv_bookcsv_230910.png](/\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv_230910.png)
+![Djangoimportcsv_bookcsv_230910.png](\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv_230910.png)
 
 확인 결과 12개의 columns가 존재한다.
 
@@ -61,14 +61,14 @@ INSTALLED_APPS = [book]
 프로젝트와 앱을 만들고 시작한다.
 
 ## CSV 파일 넣기
-![image.png](/\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv02_230910.png)
+![image.png](\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv02_230910.png)
 
 `manage.py`(변경하지 않는 한 ROOT Directory) 와 같은 위치에 가져온 CSV파일을 넣는다.(지금보니 사진은 아니다.)
 
 ## 모델 생성
 
 CSV파일을 다시 보자.
-![Djangoimportcsv_bookcsv_230910.png](/\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv_230910.png)
+![Djangoimportcsv_bookcsv_230910.png](\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv_230910.png)
 
 보이는 바와 같이
 
@@ -125,21 +125,21 @@ $ python manage.py migrate
 
 `SQLite` 검색
 
-![image.png](/\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv03_230910.png)
+![image.png](\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv03_230910.png)
 
 나는 이미 받아서 `Install` 이 안보이는데, 그 버트을 누르면 설치된다.
 
 설치 이후 `db.sqlite3` 를 확인한다. 보통 RootDirectory에 있다.
 
-![image.png](/\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv04_230910.png)
+![image.png](\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv04_230910.png)
 
 우클릭 하고 `Open Database` 를 누르면
 
-![image.png](/\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv05_230910.png)
+![image.png](\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv05_230910.png)
 
 하단에 `SQLITE EXPLORER` 탭이 보인다.
 
-![image.png](/\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv06_230910.png)
+![image.png](\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv06_230910.png)
 
 migrate가 정상적으로 완료되었다면 `book_book` 이라는 Table이 생성된 것이 확인된다.
 
@@ -152,23 +152,23 @@ Table 옆 화살표를 누르면 이미지의 우측 창 처럼 SQL Table이 보
 
 ## SQLite Terminal 사용하기
 
-![image.png](/\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv07_230910.png)
+![image.png](\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv07_230910.png)
 
 
 구글 검색창에 `SQLite Terminal` 을 검색하면
 
-![image.png](/\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv08_230910.png)
+![image.png](\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv08_230910.png)
 
 [Command Line Shell For SQLite 페이지](https://sqlite.org/cli.html)가 나온다.
 
 `DownLoad` 탭으로 들어가 자신에게 맞는 OS로 다운로드한다.
 
 나는 Window 10 64bit 를 사용하는데 그냥 번들로 받았다.
-![image.png](/\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv09_230910.png) 
+![image.png](\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv09_230910.png) 
 
 압축을 풀고 모든 파일(사실 sqlite3만 해도 된다)을 프로젝트 디렉토리에 넣는다. 경로는 Root Directory(manage.py와 같은 위치)로.
 
-![image.png](/\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv10_230910.png) 
+![image.png](\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv10_230910.png) 
 
 (이거도 사진은 안그러네...뭐냐...)
 
@@ -205,7 +205,7 @@ sqlite>
 
 그 전에 모델 업뎃도 했겠다, DB 업뎃 전 마지막 점검이다.
 
-![image.png](/\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv11_230910.png) 
+![image.png](\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv11_230910.png) 
 
 해당 CSV에는 열 이름들이 포함되어있는데, 어차피 모델에서 지정해 주었기 때문에 삭제한다.
 
@@ -237,7 +237,7 @@ sqlite> .import books.csv book_book
 
 엔터를 누르면...
 
-![image.png](/\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv12_230910.png)
+![image.png](\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv12_230910.png)
 
 엄청 긴 열땜에 한 화면에 못담았지만, DB에 들어간 모습을 볼 수 있다.
 
