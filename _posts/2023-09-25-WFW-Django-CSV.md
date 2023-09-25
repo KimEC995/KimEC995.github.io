@@ -47,7 +47,7 @@ mermaid: true
 
 ## Django 시작하기.
 
-```gitbash
+```Shell
 $ pip install django
 $ django-admin startproject ENVIRON
 $ django-admin startapp book
@@ -178,7 +178,7 @@ Table 옆 화살표를 누르면 이미지의 우측 창 처럼 SQL Table이 보
 
 1. 윈도우 cmd 터미널을 통해 sqlite3.exe에 접근한다.
 
-```cmd
+```Shell
 이동 -> 파일명.형식 DB이름
 
 sqlite3.exe db.sqlite3
@@ -188,7 +188,7 @@ sqlite3.exe db.sqlite3
 
 2. bash를 통해 접근한다.
 
-```bash
+```Shell
 python manage.py dbshell
 ```
 
@@ -219,13 +219,13 @@ sqlite>
 
 ## DB를 csv 모드로 변환
 
-```sqlite
+```Shell
 sqlite> .mode csv
 ```
 
 아무것도 변하지 않아보이겠지만 아니다. CSV를 인식 할 준비가 되었다.
 
-```sqlite
+```Shell
 sqlite> .import CSV파일이름.csv 앱이름_DB 테이블(models.py에서 선언한것)이름
 
 sqlite> .import books.csv book_book
