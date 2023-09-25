@@ -1,5 +1,5 @@
 ---
-title: CSV -> DB -> Django 파일 읽기 - SQLite3
+title: CSV -> DB -> Django 파일 읽기 - Python+Pandas
 author: Kimec995
 date: 2023-09-25 00:21:00 +09:00
 categories: [WebFrameWork, DataBase]
@@ -17,9 +17,9 @@ mermaid: true
 
 그래서 열심히 구글링을 했고 열라 많은 자료들 사이에서 마음에 들었던 방법들을 짬뽕해 포스트 적는다.
 
-참고로 두 가지 방법을 찾았는데 우선 첫 번째 작성먼저.
+참고로 두 가지 방법을 찾았는데 이번엔 두 번째.
 
-# CSV -> DB -> Django 파일 읽기 - SQLite3
+# CSV -> DB -> Django 파일 읽기 - Python+Pandas
 
 --- 
 
@@ -28,12 +28,13 @@ mermaid: true
 1. 장고에서 `models.py` 에서 구성. 타입과 이름 지정
 2. migrate
 3. 사용DB: SQLite3
-4. **SQLite3 접속, import하기**
+4. **Pandas로 읽고 Python으로 적용**
 5. 확인
 
-[이후 포스트](https://kimec995.github.io/posts/WFW-Django-CSV02/)와 같지만 다른 방법이다.
+[이전 포스트](https://kimec995.github.io/posts/WFW-Django-CSV/)와 같지만 다른 방법이다.
 
-아마 3번까진 동일할거니 [여기](#sqlite-terminal-사용하기)부터 보면 되겠다.
+아마 3번까진 동일할거니 [여기](#csv인식-할-파일-만들기)부터 보면 되겠다.
+
 
 ## 시작하기. CSV 생성
 이 포스트를 위해 CSV를 만드는건 너무나도 비효율적이다.
@@ -118,6 +119,8 @@ class Book(models.Model):
   num_pages = models.IntegerField(_("number of pages"))
   ratings_count = models.BigIntegerField(_("rating count"))
   text_review_count = models.BigIntegerField(_("text review count"))
+  publication_date = models.DateField(_("publication date"), auto_now=True)
+  publisher = models.CharField(_("publisher"), max_length=150)
 
 ```
 
@@ -164,119 +167,85 @@ Table 옆 화살표를 누르면 이미지의 우측 창 처럼 SQL Table이 보
 지금 한건 Model의 형식만 지정한거고, CSV 파일과 연결하지 않았기 때문이다.
 
 
-## SQLite Terminal 사용하기
+## CSV인식 할 파일 만들기
 
-![image.png](\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv07_230910.png)
+CSV 파일과 같은 위치에
 
+`CSV파일과같은이름.py`를 생성한다.
 
-구글 검색창에 `SQLite Terminal` 을 검색하면
+굳이 같은 이름일 필요는 없지만, 헷갈리니까...
 
-![image.png](\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv08_230910.png)
+이후 코드를 작성한다.
 
-[Command Line Shell For SQLite 페이지](https://sqlite.org/cli.html)가 나온다.
+```python
 
-`DownLoad` 탭으로 들어가 자신에게 맞는 OS로 다운로드한다.
+#파일이름은 Books.py로 생성
+import pandas as pd
+import sqlite3
+import csv
 
-나는 Window 10 64bit 를 사용하는데 그냥 번들로 받았다.
-![image.png](\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv09_230910.png) 
+#CSV 파일 로드
+df = pd.read_csv("Books.csv(CSV파일이름.csv)")
 
-압축을 풀고 모든 파일(사실 sqlite3만 해도 된다)을 프로젝트 디렉토리에 넣는다. 경로는 Root Directory(manage.py와 같은 위치)로.
+# DB랑 연결
+database = "db.sqlite3"
+conn = sqlite3.connect(database)
+dtype={
+    "title" : "CharField"
+    , "authors" : "CharField"
+    ,"average_rating" : "FloatField"
+    , "isbn" : "CharField"
+    , "isbn13" : "CharField"
+    , "language_code" : "CharField"
+    , "num_pages" : "IntegerField"
+    , "ratings_count" : "BigIntegerField"
+    , "text_review_count" : "BigIntegerField"
+}
 
-![image.png](\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv10_230910.png) 
+df.to_sql(name='book_book(DB이름)', con=conn, if_exists='replace', dtype=dtype, index=True, index_label="id")
 
-이후 두 가지 방법이 있다.
-
-
-1. 윈도우 cmd 터미널을 통해 sqlite3.exe에 접근한다.
-참고로 현재 코드블럭이름은 `bash`인데, `cmd` 블럭을 인식하지 못해 임시로 작성하는 것이다.
-
-```bash
-
-이동 -> 파일명.형식 DB이름
-
-sqlite3.exe db.sqlite3
-
-```
-
-하면 sqlite 터미널이 나온다.
-
-2. bash를 통해 접근한다.
-
-```bash
-
-python manage.py dbshell
+conn.close()
 
 ```
 
-뭐가 되었든 sqlite3 DB에 접근한다.
+dtype은 Dictionary 형태로 지정, Key값은 CSV의 열 이름, Value는 Django DataField 로 지정한다.
 
-터미널이
+그리고 `index=True, index_label="id"` 로 지정한다.
 
-```bash
+`models.py`를 migrate 한 후 생성되는 `migrations` 디렉토리를 살펴보면 분명 id를 선언한 적 없는데 id 선언이 되어있는게 확인된다.
 
-sqlite> 
+Django 특성상 id는 반드시 존재해야 하기 때문에 선언하지 않았다면 너무 친절하게 자동으로 추가해준다... 하지만 지금처럼 `bookID` 같이 ID관련 열을 제거하거나 없다면 Django에서는 오류로 인식한다.
 
-```
-
-로 변했으면 접근한거다.
-
-## CSV 변환
-
-그 전에 모델 업뎃도 했겠다, DB 업뎃 전 마지막 점검이다.
-
-![image.png](\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv11_230910.png) 
-
-해당 CSV에는 열 이름들이 포함되어있는데, 어차피 모델에서 지정해 주었기 때문에 삭제한다.
-
-또한 위에서 포함하지 않기로 한 publication_date, publisher열 도 같이 삭제한다.
-
-한 가지 주의점은 만약 당신이 열을 삭제했더라도, `,` 구분은 남아있을 수 있으니 잘 관찰하자. 
-만약 남아있다면 귀찮게 하나하나 지우지 말고 엑셀프로그램 아무거나 열어 빈 열을 삭제한다.
-
-이후 파일을 실행할 파일과 같은 위치로 옮긴다.
+따라서 csv를 Pandas로 읽는 지금 Pandas의 index는 'id'라는 이름으로 가져올 것이다.
 
 
-## DB를 csv 모드로 변환
+## 파일 실행시키기
 
 ```bash
 
-sqlite> .mode csv
+python Books.py(방금생성한파일)
 
 ```
 
-아무것도 변하지 않아보이겠지만 아니다. CSV를 인식 할 준비가 되었다.
-
-```bash
-
-sqlite> .import CSV파일이름.csv 앱이름_DB 테이블(models.py에서 선언한것)이름
-
-sqlite> .import books.csv book_book
-
-```
-
-주의점은 뒤 DB이름을 풀네임으로 작성해야 하는 것이다.
-
-앞이나 뒤만 작성하면 알 수 없는 새로운 테이블이 생성되니 관리하려면 꼭 형식을 지키자.
-
-엔터를 누르면...
+엔터를 누르면 무언가 휙휙 변하고...
 
 ![image.png](\assets\img\postimg\Djangoimportcsv_bookCSV\Djangoimportcsv_bookcsv12_230910.png)
 
 엄청 긴 열땜에 한 화면에 못담았지만, DB에 들어간 모습을 볼 수 있다.
 
-이후 용량을 위해 CSV는 지워도 DB에서 읽을 수 있다.
+이후 용량을 위해 CSV와 생성한 파일은 지워도 DB에서 읽을 수 있다.
+
+또한 수정하려면 생성한 파일을 다시 실행하면 된다.
+
 
 ## 마무리
-우선 SQL에서 직접 접근해 csv파일을 불러오는 방법을 확인했다.
+이번엔 Python으로 Pandas를 사용해 CSV를 직접 읽고 DB에 저장하는 코드를 작성해 보았다.
 
-이 다음 포스트는 Python을 사용해 직접 DB에 저장하는 방법을 해보려 한다.
-
-이후
-[CSV -> DB -> Django 파일 읽기 - Python+Pandas](https://kimec995.github.io/posts/WFW-Django-CSV02/) 과 비교해 어떤게 더 나을지는 사용자의 몫이다. 잘 배우자.
-
+이전 
+[CSV -> DB -> Django 파일 읽기 - SQLite3](https://kimec995.github.io/posts/WFW-Django-CSV/) 과 비교해 어떤게 더 나을지는 사용자의 몫이다. 잘 배우자.
 
 
 ## 참고
 [Django Model Field](https://docs.djangoproject.com/en/4.2/ref/models/fields/)
 
-많은 구글링
+수많은 구글링
