@@ -54,18 +54,14 @@ mermaid: true
 ## Django 시작하기.
 
 ```bash
-
 $ pip install django
 $ django-admin startproject ENVIRON
 $ django-admin startapp book
-
 ```
 
 ```python
-
 # settings.py
 INSTALLED_APPS = [book]
-
 ```
 
 
@@ -103,14 +99,13 @@ BigIntegerField 는 64비트로 정수를 표현하는 방식으로, -9223372036
 다 하면 번거로우니 bookID, publication_date, publisher는 포함하지 않는다.
 
 ```python
-
 # book: models.py
 from django.db import models
 from django.utils.translation import gettext as _
 
 class Book(models.Model):
-    title = models.CharField(_("title"), max_length=255)
-    authors = models.CharField(_("authors"), max_length=255)
+  title = models.CharField(_("title"), max_length=255)
+  authors = models.CharField(_("authors"), max_length=255)
   average_rating = models.FloatField(_("average rating"))
   isbn = models.CharField(_("isbn"), max_length=150)
   isbn13 = models.CharField(_("isbn 13"), max_length=150)
@@ -118,7 +113,6 @@ class Book(models.Model):
   num_pages = models.IntegerField(_("number of pages"))
   ratings_count = models.BigIntegerField(_("rating count"))
   text_review_count = models.BigIntegerField(_("text review count"))
-
 ```
 
 이만하면 되겠다.
@@ -128,11 +122,9 @@ class Book(models.Model):
 우선 만든 models.py를 migrate 한다.
 
 ```bash
-
 $ python manage.py makemigrations
 
 $ python manage.py migrate
-
 ```
 
 이후 db.squlite3 를 확인하기 위해 앱을 설치한다.
@@ -191,11 +183,9 @@ Table 옆 화살표를 누르면 이미지의 우측 창 처럼 SQL Table이 보
 참고로 현재 코드블럭이름은 `bash`인데, `cmd` 블럭을 인식하지 못해 임시로 작성하는 것이다.
 
 ```bash
-
 이동 -> 파일명.형식 DB이름
 
 sqlite3.exe db.sqlite3
-
 ```
 
 하면 sqlite 터미널이 나온다.
@@ -203,9 +193,7 @@ sqlite3.exe db.sqlite3
 2. bash를 통해 접근한다.
 
 ```bash
-
 python manage.py dbshell
-
 ```
 
 뭐가 되었든 sqlite3 DB에 접근한다.
@@ -213,9 +201,7 @@ python manage.py dbshell
 터미널이
 
 ```bash
-
 sqlite> 
-
 ```
 
 로 변했으면 접근한거다.
@@ -239,19 +225,15 @@ sqlite>
 ## DB를 csv 모드로 변환
 
 ```bash
-
 sqlite> .mode csv
-
 ```
 
 아무것도 변하지 않아보이겠지만 아니다. CSV를 인식 할 준비가 되었다.
 
 ```bash
-
 sqlite> .import CSV파일이름.csv 앱이름_DB 테이블(models.py에서 선언한것)이름
 
 sqlite> .import books.csv book_book
-
 ```
 
 주의점은 뒤 DB이름을 풀네임으로 작성해야 하는 것이다.

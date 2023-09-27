@@ -55,18 +55,14 @@ mermaid: true
 ## Django 시작하기.
 
 ```bash
-
 $ pip install django
 $ django-admin startproject ENVIRON
 $ django-admin startapp book
-
 ```
 
 ```python
-
 # settings.py
 INSTALLED_APPS = [book]
-
 ```
 
 
@@ -104,14 +100,13 @@ BigIntegerField 는 64비트로 정수를 표현하는 방식으로, -9223372036
 다 하면 번거로우니 bookID, publication_date, publisher는 포함하지 않는다.
 
 ```python
-
 # book: models.py
 from django.db import models
 from django.utils.translation import gettext as _
 
 class Book(models.Model):
-    title = models.CharField(_("title"), max_length=255)
-    authors = models.CharField(_("authors"), max_length=255)
+  title = models.CharField(_("title"), max_length=255)
+  authors = models.CharField(_("authors"), max_length=255)
   average_rating = models.FloatField(_("average rating"))
   isbn = models.CharField(_("isbn"), max_length=150)
   isbn13 = models.CharField(_("isbn 13"), max_length=150)
@@ -121,7 +116,6 @@ class Book(models.Model):
   text_review_count = models.BigIntegerField(_("text review count"))
   publication_date = models.DateField(_("publication date"), auto_now=True)
   publisher = models.CharField(_("publisher"), max_length=150)
-
 ```
 
 이만하면 되겠다.
@@ -131,11 +125,9 @@ class Book(models.Model):
 우선 만든 models.py를 migrate 한다.
 
 ```bash
-
 $ python manage.py makemigrations
 
 $ python manage.py migrate
-
 ```
 
 이후 db.squlite3 를 확인하기 위해 앱을 설치한다.
@@ -178,7 +170,6 @@ CSV 파일과 같은 위치에
 이후 코드를 작성한다.
 
 ```python
-
 #파일이름은 Books.py로 생성
 import pandas as pd
 import sqlite3
@@ -205,7 +196,6 @@ dtype={
 df.to_sql(name='book_book(DB이름)', con=conn, if_exists='replace', dtype=dtype, index=True, index_label="id")
 
 conn.close()
-
 ```
 
 dtype은 Dictionary 형태로 지정, Key값은 CSV의 열 이름, Value는 Django DataField 로 지정한다.
@@ -222,9 +212,7 @@ Django 특성상 id는 반드시 존재해야 하기 때문에 선언하지 않�
 ## 파일 실행시키기
 
 ```bash
-
 python Books.py(방금생성한파일)
-
 ```
 
 엔터를 누르면 무언가 휙휙 변하고...

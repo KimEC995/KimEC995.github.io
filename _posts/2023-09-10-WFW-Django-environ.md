@@ -33,7 +33,7 @@ Django에서 서버를 동작할 때 사용하는 비밀 키가 들어있는데,
 가상환경 내에서 장고를 인스톨 한 후, environ을 인스톨 한다.
 
 
-```gitbash
+```bash
 $ pip install django
 
 $ pip install django-environ
