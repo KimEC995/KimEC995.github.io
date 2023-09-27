@@ -8,7 +8,7 @@ pin: true
 math: true
 mermaid: true
 ---
-# TIL : HTTP와 CSS 기본02
+
 > 01은 정리 안했다!!
 
 1. [HTML 파일 수정과 BootStrap 연결](#1-html-파일-수정과-bootstrap-연결)

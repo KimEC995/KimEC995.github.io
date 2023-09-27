@@ -9,8 +9,6 @@ math: true
 mermaid: true
 ---
 
-# GET 방식과 POST 방식의 차이와 구분
-
 HTTP 요청 메서드 GET 과 POST 가 자주 눈에 띈다.
 
 얼추 무엇을 하는지는 감으로만 알았지, 정확한 정의가 무엇인지 알아보기 위해 포스팅 한다.

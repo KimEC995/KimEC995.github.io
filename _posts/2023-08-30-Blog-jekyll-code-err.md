@@ -1,5 +1,5 @@
 ---
-title: GitBlog Error - Jekyll Markdown Code Err
+title: GitBlog Error - Jekyll 코드 블록 수행 문제
 author: Kimec995
 date: 2023-08-30 10:00:00 +09:00
 categories: [GitBlog, Error]
@@ -8,8 +8,6 @@ pin: true
 math: true
 mermaid: true
 ---
-
-# GitBlog Error - Jekyll 코드 블록 수행 문제
 
 어김없이 블로그 에러가 나왔다.
 

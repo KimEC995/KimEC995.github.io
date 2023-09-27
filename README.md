@@ -8,8 +8,11 @@
 ### 세미프로젝트
 
 - AWS EC2로 Django 서비스 배포
+  - 개념과 정의
   - Putty
   - VSCode
+  - 클라우드 컴퓨팅
+  - VPC(Virtual Private Cloud)
 
 - HTML
   - DataList/Select

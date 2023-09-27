@@ -19,8 +19,6 @@ mermaid: true
 
 참고로 두 가지 방법을 찾았는데 우선 첫 번째 작성먼저.
 
-# CSV -> DB -> Django 파일 읽기 - SQLite3
-
 --- 
 
 ## 전체 개요

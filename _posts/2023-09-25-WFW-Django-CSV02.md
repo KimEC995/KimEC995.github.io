@@ -19,8 +19,6 @@ mermaid: true
 
 참고로 두 가지 방법을 찾았는데 이번엔 두 번째.
 
-# CSV -> DB -> Django 파일 읽기 - Python+Pandas
-
 --- 
 
 ## 전체 개요

@@ -9,8 +9,6 @@ math: true
 mermaid: true
 ---
 
-# MTV / MVC Pattern
-
 웹 개발을 처음 배우면 MTV 혹은 MVC 라는 말이 참 많이 나온다.
 
 이게 뭐길래 자꾸만 말이 나오는걸까.

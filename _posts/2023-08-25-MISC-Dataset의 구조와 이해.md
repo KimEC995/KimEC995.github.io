@@ -8,7 +8,6 @@ pin: true
 math: true
 mermaid: true
 ---
-# Dataset의 구조와 이해
 
 머신러닝을 배우기 위해 Scikit-Learn 라이브러리를 공부하고 있다.
 해당 라이브러리에는 기본으로 제공하는 Dataset들이 있는데 처음 보는 구조이다.
