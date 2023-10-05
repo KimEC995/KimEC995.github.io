@@ -1,5 +1,5 @@
 ---
-title: CSV -> DB -> Django 파일 읽기 - SQLite3
+title: Django CSV 읽기 - SQLite3
 author: Kimec995
 date: 2023-09-25 00:21:00 +09:00
 categories: [WebFrameWork, DataBase]
