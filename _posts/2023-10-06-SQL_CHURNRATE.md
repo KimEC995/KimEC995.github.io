@@ -1,7 +1,7 @@
 ---
 title: SQL실습- Churn Rate 구하기(비활동 비율 구하기)
 author: Kimec995
-date: 2023-10-0 00:13:00 +09:00
+date: 2023-10-06 00:13:00 +09:00
 categories: [SQL, Apply]
 tags: [SQL, MySQL, Basic]
 pin: true
