@@ -3,7 +3,7 @@ title: Django CSV 읽기 - Python+Pandas
 author: Kimec995
 date: 2023-09-25 00:21:00 +09:00
 categories: [WebFrameWork, DataBase]
-tags: [WebFrameWork, Django, 장고, CSV, Database, SQLite3]
+tags: [WebFrameWork, Django, 장고, CSV, Database, SQLite3, SQL]
 pin: true
 math: true
 mermaid: true
