@@ -368,6 +368,11 @@ WHERE RNK <= 10
 
 1992 Ferrari 360 Spider red 라는 자동차가 가장 많이 팔렸다.
 
+![image.png](\assets\img\postimg\SQL_Q1\SQL_Q1_09.png)
+
+[사진출처](https://carsandbids.com/auctions/rMWL18w4/2000-ferrari-360-spider)
+
+멋진 자동차다!
 
 ## 참고자료 및 데이터
 
@@ -378,7 +383,3 @@ WHERE RNK <= 10
 [참고자료2](https://github.com/billyrohh/instacart_dataset)
 
 [MYSQL SampleDATA](https://www.mysqltutorial.org/mysql-sample-database.aspx)
-
-[Kaggle: Women's E-Commerce Clothing Reviews](https://www.kaggle.com/datasets/nicapotato/womens-ecommerce-clothing-reviews)
-
-[Kaggle: Titanic extended dataset (Kaggle + Wikipedia)](https://www.kaggle.com/datasets/pavlofesenko/titanic-extended)
