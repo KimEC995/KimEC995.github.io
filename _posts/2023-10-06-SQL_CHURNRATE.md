@@ -378,8 +378,4 @@ WHERE RNK <= 10
 
 [서적: SQL로 맛보는 전처리 분석](https://product.kyobobook.co.kr/detail/S000001934242)
 
-[참고자료1](https://github.com/billyrohh/dataset/blob/master/dataset2.csv)
-
-[참고자료2](https://github.com/billyrohh/instacart_dataset)
-
 [MYSQL SampleDATA](https://www.mysqltutorial.org/mysql-sample-database.aspx)
