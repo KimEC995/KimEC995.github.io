@@ -28,12 +28,11 @@ SQL 문법을 몇 가지 살펴봤었다.
 
 ---
 
-1. **전체 리뷰 중 낮은 점수 분석하기**
-- 어떤 부서가, 상품이 낮을까?
+1. **분류 찾기**
 
-2. **전체 재구매율 계산하기**
+2. **연령대별 분류하기**
 
-3. **국가별 재구매율 계산하기**
+3. **리뷰 분석하기(텍스트 분류)**
 
 ---
 우선 해당 데이터를 가져온 후.
@@ -48,6 +47,182 @@ USE mydata;
 
 적다!
 
-상품명, 구매자 연령대, 리뷰 제목, 리뷰 내용, 점수, 상품 추천여부, 긍정적 피드백 수, 
+상품명, 구매자 연령대, 리뷰 제목, 리뷰 내용, 점수, 상품 추천여부, 긍정적 피드백 수, 상품 DIVISION, 상품 분류, 상품 타입 열들이 있다.
 
-## 1. 전체 리뷰 중 낮은 점수 분석하기
+## 1. 분류 찾기
+
+가장 낮은 점수와 그 분류를 찾기 위해 탑다운 방식으로 내려 갈 것이다.
+
+우선 대분류인 Division 별로 나누어 평점을 살펴보자!
+
+```sql
+SELECT
+	`Division Name`
+    , AVG(Rating)
+FROM dataset2
+GROUP BY 1
+;
+```
+그룹으로 묶고 평점을 확인하니
+
+![image.png](/\assets\img\postimg\SQL_Q3\SQL_Q3_01.png)
+
+음 세 카테고리의 평점이 비슷하다.
+
+그럼 그 다음 Department 별로!
+
+```sql
+SELECT
+	`Department Name`
+    , AVG(Rating)
+FROM dataset2
+GROUP BY 1
+;
+```
+
+![image.png](/\assets\img\postimg\SQL_Q3\SQL_Q3_02.png)
+
+Trend 를 제외하고 평점이 비슷하다.
+
+Trend의 대략적인 정보를 확인해보자
+
+```sql
+SELECT
+	`Department Name`
+    , COUNT(DISTINCT `Clothing ID`) AS CNT
+    , AVG(Age) AS AVG_Age
+    , AVG(Rating) AS AVG_R
+    
+FROM dataset2
+WHERE `Department Name` = 'Trend'
+GROUP BY 1
+;
+```
+![image.png](/\assets\img\postimg\SQL_Q3\SQL_Q3_03.png)
+
+트렌드인데 생각보다 평균 연령대가 높다.
+
+한번 연령대 별로 확인해볼까?
+
+## 2. 연령대별 분류하기
+
+```sql
+SELECT
+	FLOOR(AGE/10) * 10 AS Age_B -- 연령대분류
+    , COUNT(*) AS CNT
+    , AVG(Rating) AS AVG_R
+    
+FROM dataset2
+WHERE `Department Name` = 'Trend'
+GROUP BY 1
+ORDER BY 3
+;
+```
+
+![image.png](/\assets\img\postimg\SQL_Q3\SQL_Q3_04.png)
+
+70대의 점수가 가장 낮지만, 구매량이 한 개여서 상품 대표 리뷰로 보긴 어렵다.
+
+그리고 생각보다 평점들이 높아 이번엔 평점 3점 이하의 점수를 확인해보자!
+
+```sql
+SELECT
+	FLOOR(AGE/10) * 10 AS Age_B -- 연령대분류
+    , COUNT(*) AS CNT
+    , AVG(Rating) AS AVG_R
+    
+FROM dataset2
+WHERE `Department Name` = 'Trend' AND Rating <=3
+GROUP BY 1
+ORDER BY 3
+;
+```
+
+![image.png](/\assets\img\postimg\SQL_Q3\SQL_Q3_05.png)
+
+처참하다...
+
+50대는 왜 평점이 유독 낮을까?
+
+혹시 50대가 가장 많이 구매해서 그런걸까?
+
+연령대 별 리뷰 작성 비율을 확인하자
+
+```sql
+SELECT
+	FLOOR(AGE/10) * 10 AS Age_B -- 연령대분류
+    , COUNT(*) AS CNT
+    
+FROM dataset2
+WHERE `Department Name` = 'Trend'
+GROUP BY 1
+;
+```
+![image.png](/\assets\img\postimg\SQL_Q3\SQL_Q3_06.png)
+
+가장 많이 구매한 연령대는 30대.
+
+50대는 1위와 적당한 차이로 3위이다.
+
+만족도 평점과 비교해 보아도 30대와 50대의 차이는 유의미하다.
+
+뭐가 원인일까? 크기? 디자인?
+
+## 3. 리뷰 분석하기(텍스트 분류)
+
+50대의 'Trend'가 점수가 낮다.
+
+이들의 리뷰를 살펴보고 문제점을 찾자!
+
+17개라서 사실 그냥 읽어도 되지만, 기왕 SQL 배운거 잘 써보자
+
+```sql
+SELECT
+	SIZE_Com
+    , SIZE_Com / ALL_Cnt AS SIZE_Rate
+    , Design_Com
+    , Design_Com / ALL_Cnt AS Design_Rate
+    , Quality_Com
+    , Quality_Com / ALL_Cnt AS Quality_Rate
+    , ALL_Cnt
+	
+FROM (
+	SELECT
+		SUM(CASE WHEN `Review Text` LIKE '%SIZE%' THEN 1 ELSE 0 END) AS SIZE_Com
+		, SUM(CASE WHEN `Review Text` LIKE '%Design%' THEN 1 ELSE 0 END) AS Design_Com
+        , SUM(CASE WHEN `Review Text` LIKE '%Quality%' THEN 1 ELSE 0 END) AS Quality_Com
+		, COUNT(*) AS ALL_Cnt
+	FROM dataset2
+	WHERE `Department Name` = 'Trend'
+		AND Rating <= 3
+        AND AGE BETWEEN 50 AND 59
+		) A
+;
+```
+
+![image.png](/\assets\img\postimg\SQL_Q3\SQL_Q3_07.png)
+
+무려 10개의 리뷰 중 4개가 사이즈 관련이다.
+
+너무 큰가? 작은가?
+
+```sql
+SELECT
+	SUM(CASE WHEN `Review Text` LIKE '%SIZE%' THEN 1 ELSE 0 END) AS SIZE_Com
+	, SUM(CASE WHEN `Review Text` LIKE '%Large%' THEN 1 ELSE 0 END) AS Large_Com
+	, SUM(CASE WHEN `Review Text` LIKE '%Loose%' THEN 1 ELSE 0 END) AS Loose_Com
+	, SUM(CASE WHEN `Review Text` LIKE '%Small%' THEN 1 ELSE 0 END) AS Small_Com
+	, SUM(CASE WHEN `Review Text` LIKE '%Tight%' THEN 1 ELSE 0 END) AS Tight_Com
+FROM dataset2
+WHERE `Department Name` = 'Trend'
+	AND Rating <= 3
+	AND AGE BETWEEN 50 AND 59
+;
+```
+![image.png](/\assets\img\postimg\SQL_Q3\SQL_Q3_08.png)
+
+4개의 리뷰 중 작고 꽉맞는다는 리뷰가 3개다.
+
+50대에겐 너무 작은 옷 이었나보다..
+
+옷 크기에 대한 안내가 적었던 것 같으니 크기 안내를 추가하는 편이 좋아보인다.
