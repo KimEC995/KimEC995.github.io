@@ -1,0 +1,53 @@
+---
+title: SQL실습- 텍스트 리뷰 분석하기
+author: Kimec995
+date: 2023-10-10 17:30:00 +09:00
+categories: [SQL, Apply]
+tags: [SQL, MySQL, Basic]
+pin: true
+math: true
+mermaid: true
+---
+
+SQL 문법을 몇 가지 살펴봤었다.
+
+문제를 풀어보자.
+
+
+## 문제: 텍스트 리뷰 분석하기
+
+쇼핑몰에서 옷을 구매하면 리뷰를 작성할 때도 있다.
+
+만족스러워서 작성할 때도 있지만, 아닌 경우도 있다.
+
+이번엔 만족도가 낮은 리뷰 중 어떤 연령대의 어떤 품목이 어떤 불만이 있는지 확인해보자!
+
+사용하는 데이터는 [케글데이터](https://www.kaggle.com/datasets/nicapotato/womens-ecommerce-clothing-reviews) 중 `Dataset2` 이다.
+
+전체 플로우를 생각해보면.
+
+---
+
+1. **전체 리뷰 중 낮은 점수 분석하기**
+- 어떤 부서가, 상품이 낮을까?
+
+2. **전체 재구매율 계산하기**
+
+3. **국가별 재구매율 계산하기**
+
+---
+우선 해당 데이터를 가져온 후.
+
+```sql
+USE mydata;
+```
+
+## 0. ERD
+
+![image.png](/\assets\img\postimg\SQL_ALL\SQL_ALL_00_Dataset2.png)
+
+적다!
+
+상품명, 구매자 연령대, 리뷰 제목, 리뷰 내용, 점수, 상품 추천여부, 긍정적 피드백 수, 
+
+## 1. 전체 리뷰 중 낮은 점수 분석하기
