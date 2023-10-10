@@ -7,6 +7,9 @@ tags: [WebFrameWork, Django, Error]
 pin: true
 math: true
 mermaid: true
+image: 
+  path: /assets/img/postimg/Django_Logo.png
+  alt: image alternative text
 ---
 
 어제 [Django-environ](https://django-environ.readthedocs.io/en/latest/quickstart.html) 을 설정했었다.

@@ -7,6 +7,9 @@ tags: [SQL, MySQL, Basic]
 pin: true
 math: true
 mermaid: true
+image: 
+  path: /assets/img/postimg/SQL_ALL/SQL_ALL_mySQL
+  alt: image alternative text
 ---
 
 SQL 문법을 몇 가지 살펴봤었다.

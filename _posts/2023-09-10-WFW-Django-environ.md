@@ -7,6 +7,9 @@ tags: [WebFrameWork, Django, environ, 장고, 환경설정]
 pin: true
 math: true
 mermaid: true
+image: 
+  path: /assets/img/postimg/Django_Logo.png
+  alt: image alternative text
 ---
 
 [Django Environ Documentation](https://django-environ.readthedocs.io/en/latest/quickstart.html)
