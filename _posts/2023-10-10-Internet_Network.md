@@ -39,13 +39,13 @@ Django를 할 떄도, Ubuntu를 설치할 때도, Jekyll을 활성화 할 때에
 이는 컴퓨터 네트워크에서 데이터를 주고 받기 위한 표준 규약으로, 네트워크 상에서 컴퓨터나 기기를 식별하기 위해 사용하고 결론적으로 데이터가 올바른 목적지에 도달할 수 있게 만들어준다. 단위는 패킷(Packet)을 사용한다.
 
 ### IP Packet
-![image.png](/\assets\img\postimg\Internet_Network\Internet_Network_01.png)
+![image.png](\assets\img\postimg\Internet_Network\Internet_Network_01.png)
 
 [사진출처](https://ko.wikipedia.org/wiki/IPv4)
 
 최하단의 `Data`를 제외하고 상단의 정보가 IP Packet이다. 내용은 읽으면 알겠지만, 보내는 IP 주소, 받는 IP 주소 등등 기타 정보들이다.
 
-![image.png](/\assets\img\postimg\Internet_Network\Internet_Network_02.png)
+![image.png](\assets\img\postimg\Internet_Network\Internet_Network_02.png)
 
 [사진출처](https://www.inflearn.com/course/http-%EC%9B%B9-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/dashboard)
 
@@ -78,7 +78,7 @@ Django를 할 떄도, Ubuntu를 설치할 때도, Jekyll을 활성화 할 때에
 
 순서는
 
-![image.png](/\assets\img\postimg\Internet_Network\Internet_Network_03.png)
+![image.png](\assets\img\postimg\Internet_Network\Internet_Network_03.png)
 
 1. 사용자가 어플리케이션에 데이터와 정보를 입력한다.
 2. **어플리케이션 계층** 에서 HTTP를 통해 SOCKET 라이브러리로 전달
@@ -89,7 +89,7 @@ Django를 할 떄도, Ubuntu를 설치할 때도, Jekyll을 활성화 할 때에
 
 이 순서는 IP에서도 동일한데, TCP는 대체 무슨 역할인걸까.
 
-![image.png](/\assets\img\postimg\Internet_Network\Internet_Network_04.png)
+![image.png](\assets\img\postimg\Internet_Network\Internet_Network_04.png)
 
 TCP에서는 IP에선 부족했던 PORT 정보, 전송 제어, 순서 등의 정보를 추가한다. 이름 그대로 전송을 제어하고 IP의 한계를 극복했다.
 
@@ -115,7 +115,7 @@ TCP에서는 IP에선 부족했던 PORT 정보, 전송 제어, 순서 등의 정
 ## 출처
 [강의-모든개발자를 위한 HTTP](https://www.inflearn.com/course/http-%EC%9B%B9-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/dashboard)
 
-![image.png](/\assets\img\postimg\Internet_Network\Internet_Network_00.png)
+![image.png](\assets\img\postimg\Internet_Network\Internet_Network_00.png)
 
 
 
