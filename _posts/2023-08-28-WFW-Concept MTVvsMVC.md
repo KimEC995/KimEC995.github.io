@@ -7,6 +7,9 @@ tags: [WebFrameWork, Concept, MTV, MVC, Pattern]
 pin: true
 math: true
 mermaid: true
+image: 
+  path: /assets/img/postimg/Django_Logo.png
+  alt: MTV vs MVC
 ---
 
 웹 개발을 처음 배우면 MTV 혹은 MVC 라는 말이 참 많이 나온다.

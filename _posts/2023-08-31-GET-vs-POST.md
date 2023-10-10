@@ -7,6 +7,9 @@ tags: [WebFrameWork, HTTP, Method, GET, POST]
 pin: true
 math: true
 mermaid: true
+image: 
+  path: /assets/img/postimg/HTTP_IMG.png
+  alt: GET 방식과 POST 방식의 차이와 구분
 ---
 
 HTTP 요청 메서드 GET 과 POST 가 자주 눈에 띈다.

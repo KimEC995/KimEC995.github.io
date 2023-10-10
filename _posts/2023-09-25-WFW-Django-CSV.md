@@ -9,7 +9,7 @@ math: true
 mermaid: true
 image: 
   path: /assets/img/postimg/Django_Logo.png
-  alt: image alternative text
+  alt: Django CSV 읽기 - SQLite3
 ---
 
 2023년 09월. Django로 머신러닝 결과물을 서비스 하고 그래프 그리는 프로젝트를 하고 있다.

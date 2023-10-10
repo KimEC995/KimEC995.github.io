@@ -9,7 +9,7 @@ math: true
 mermaid: true
 image: 
   path: /assets/img/postimg/Django_Logo.png
-  alt: image alternative text
+  alt: Django 에서 환경 관리하기 - Django_Environ
 ---
 
 [Django Environ Documentation](https://django-environ.readthedocs.io/en/latest/quickstart.html)

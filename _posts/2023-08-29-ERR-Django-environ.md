@@ -9,7 +9,7 @@ math: true
 mermaid: true
 image: 
   path: /assets/img/postimg/Django_Logo.png
-  alt: image alternative text
+  alt: 문자열 에러(django-environ 충돌)
 ---
 
 어제 [Django-environ](https://django-environ.readthedocs.io/en/latest/quickstart.html) 을 설정했었다.

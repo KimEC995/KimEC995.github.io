@@ -7,6 +7,9 @@ tags: [GitBlog, Error, Jekyll, WebFrameWork, HTML]
 pin: true
 math: true
 mermaid: true
+image: 
+  path: /assets/img/postimg/jekyll.png
+  alt: GitBlog Error - Jekyll 코드 블록 수행 문제
 ---
 
 어김없이 블로그 에러가 나왔다.

@@ -1,5 +1,5 @@
 ---
-title: HTTP와 CSS 기본02
+title: HTML과 CSS 기본02
 author: Kimec995
 date: 2023-08-29 16:10:00 +09:00
 categories: [WebFrameWork, Concept]
@@ -7,6 +7,9 @@ tags: [WebFrameWork, Concept, Django]
 pin: true
 math: true
 mermaid: true
+image: 
+  path: /assets/img/postimg/HTML_IMG.png
+  alt: HTTP와 CSS 기본02
 ---
 
 > 01은 정리 안했다!!

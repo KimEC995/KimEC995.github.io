@@ -8,8 +8,8 @@ pin: true
 math: true
 mermaid: true
 image: 
-  path: /assets/img/postimg/SQL_ALL/SQL_ALL_mySQL
-  alt: image alternative text
+  path: /assets/img/postimg/SQL_ALL/SQL_ALL_mySQL.png
+  alt: SQL실습- Churn Rate 구하기(비활동 비율 구하기)
 ---
 
 SQL 문법을 몇 가지 살펴봤었다.

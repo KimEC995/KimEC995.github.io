@@ -7,6 +7,9 @@ tags: [GitBlog, Error, Chirpy, Jekyll]
 pin: true
 math: true
 mermaid: true
+image: 
+  path: /assets/img/postimg/jekyll.png
+  alt: GitBlog Error - Local vs Web
 ---
 
 8월 24일 이래저래 다사다난한 에러를 뚫고 드디어 깃허브블로그를 개설했었다!!
