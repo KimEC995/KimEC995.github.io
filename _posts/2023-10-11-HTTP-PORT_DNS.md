@@ -1,7 +1,7 @@
 ---
 title: Internet개념 - PORT, DNS
 author: Kimec995
-date: 2023-10-11 13:55:00 +09:00
+date: 2023-10-11 12:40:00 +09:00
 categories: [Internet, Concept]
 tags: [Basic, Network, HTTP]
 pin: true
