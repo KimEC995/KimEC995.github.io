@@ -8,8 +8,8 @@ pin: true
 math: true
 mermaid: true
 image: 
-  path: /assets/img/postimg/SQL_ALL/Internet_Network_IMG.png
-  alt: Internet개념 - 인터넷 네트워크란
+  path: /assets/img/postimg/Internet_Network_IMG.png
+  alt: Internet개념 -w 인터넷 네트워크란
 ---
 
 인터넷 네트워크는 전 세계적으로 연결된 컴퓨터 네트워크의 집합을 의미한다.
@@ -63,7 +63,7 @@ Django를 할 떄도, Ubuntu를 설치할 때도, Jekyll을 활성화 할 때에
 
 서버-클라이언트가 계속 패킷을 주고 받으며 반복하다보면 이런 한계에 도달할 수 있다. 이를 보완하기 위해..
 
-## TCP(Transmission Control Protocol, 전송 제어 프로토콜)
+## 2. TCP(Transmission Control Protocol, 전송 제어 프로토콜)
 
 **인터넷 프로토콜 스택의 4 계층**
 
@@ -103,7 +103,7 @@ TCP에서는 IP에선 부족했던 PORT 정보, 전송 제어, 순서 등의 정
 
 마지막 PORT 구분은 TCP, UDP 모두 지원하는 기능이며, TCP의 80번과 UDP의 80번은 다른 포트이다. 이 포트를 지정하는건 **어플리케이션 계층** 에서 한다.
 
-## UDP (User Datagram Protocol, 사용자 데이터그램 프로토콜)
+## 3. UDP (User Datagram Protocol, 사용자 데이터그램 프로토콜)
 
 사실 TCP와 비교했을 때 기능이 거의 없다.
 
