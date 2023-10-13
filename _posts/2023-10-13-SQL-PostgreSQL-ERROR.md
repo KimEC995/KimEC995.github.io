@@ -8,7 +8,7 @@ pin: true
 math: true
 mermaid: true
 image: 
-  path: /assets/img/postimg/SQL_ALL/PostgreSQL_00.png
+  path: /assets/img/postimg/SQL_ALL/SQL_ALL_PostgreSQL.png
   alt: PostgreSQL ERROR
 ---
 
