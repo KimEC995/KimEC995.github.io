@@ -20,16 +20,16 @@ SQL 간이 테스트 중 CSV 파일 IMPORT를 안했어서 시도했다 오류 �
 
 환경설정을 완료하지 않고 CSV 파일을 IMPORT 하면 해당 오류가 나온다.
 
-![image.png](/\assets\img\postimg\SQL_PostgreSQL\Error00_00.png)
+![image.png](\assets\img\postimg\SQL_PostgreSQL\Error00_00.png)
 
 따라서 환경설정
 
-![image.png](/\assets\img\postimg\SQL_PostgreSQL\Error00_03.png)
+![image.png](\assets\img\postimg\SQL_PostgreSQL\Error00_03.png)
 
 File > Preferences > Paths > Binary Path
 에서 맞는 버전의 ProgresSQL의 BIN 경로를 잘 잡아준다. **SAVE** 하고 다시 IMPORT 하면..
 
-![image.png](/\assets\img\postimg\SQL_PostgreSQL\Error00_01.png)
+![image.png](\assets\img\postimg\SQL_PostgreSQL\Error00_01.png)
 
 > 이미지는 잘못찍었는데, 같은 이름의 CSV 파일이 맞았다.
 
@@ -37,9 +37,9 @@ File > Preferences > Paths > Binary Path
 
 아, Header를 못 읽는구나~ 하고 체크해주면
 
-![image.png](/\assets\img\postimg\SQL_PostgreSQL\Error00_04.png)
+![image.png](\assets\img\postimg\SQL_PostgreSQL\Error00_04.png)
 
-![image.png](/\assets\img\postimg\SQL_PostgreSQL\Error00_05.png)
+![image.png](\assets\img\postimg\SQL_PostgreSQL\Error00_05.png)
 
 
 쨔잔~ 여전히 못읽고있다~~
