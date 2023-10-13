@@ -1,9 +1,9 @@
 ---
 title: ERROR- IMPORT CSV(Permission denied SQL state 42501)
 author: Kimec995
-date: 2023-10-13 13:10:00 +09:00
-categories: [SQL, Concept]
-tags: [SQL, PostgreSQL, Basic, Concept]
+date: 2023-10-13 16:30:00 +09:00
+categories: [SQL, Error]
+tags: [SQL, PostgreSQL, Error,Basic, Concept]
 pin: true
 math: true
 mermaid: true
