@@ -1,7 +1,7 @@
 ---
 title: HTTP의 특징
 author: Kimec995
-date: 2023-10-20 15:00:00 +09:00
+date: 2023-10-20 15:10:00 +09:00
 categories: [Internet, Concept]
 tags: [Basic, Network, HTTP]
 pin: true
