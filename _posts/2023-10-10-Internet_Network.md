@@ -112,11 +112,24 @@ TCP에서는 IP에선 부족했던 PORT 정보, 전송 제어, 순서 등의 정
 기능이 없다면 안좋다고 생각할 수 있지만 오히려 그게 장점이다. 기능이 없기 때문에 어엄청 복잡한 TCP 튜닝보다 UDP 튜닝이 훨씬 빠르고 쉽다!
 
 
-## 출처
+## HTTP 공부 시리즈
+
+[Internet개념 - 인터넷 네트워크란](https://kimec995.github.io/posts/Internet_Network/)
+
+[Internet개념 - PORT, DNS](https://kimec995.github.io/posts/HTTP-PORT_DNS/)
+
+[URI와 웹 브라우저의 흐름](https://kimec995.github.io/posts/HTTP-URI-%ED%9D%90%EB%A6%84/)
+
+[HTTP의 특징](https://kimec995.github.io/posts/HTTP-Concept/)
+
+[HTTP 메시지](https://kimec995.github.io/posts/HTTP-message/)
+
+## 참고
+
 [강의-모든개발자를 위한 HTTP](https://www.inflearn.com/course/http-%EC%9B%B9-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/dashboard)
 
 ![image.png](\assets\img\postimg\Internet_Network\Internet_Network_00.png)
 
+[위키문서](https://ko.wikipedia.org/wiki/%ED%86%B5%ED%95%A9_%EC%9E%90%EC%9B%90_%EC%8B%9D%EB%B3%84%EC%9E%90)
 
-
-그리고 수많은 구글링
+[ietf](https://www.ietf.org/rfc/rfc3986.txt)

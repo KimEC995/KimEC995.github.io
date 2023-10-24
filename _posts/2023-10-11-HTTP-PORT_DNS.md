@@ -31,11 +31,24 @@ PORT 번호는 `http://127.0.0.1:8000/` 에서 `:` 뒤에 붙는다. 번호는 0
 
 IPTime 같은 공유기 회사에서는 자사의 도메인을 기반으로 DDNS(Dynamic Domain Name System) 을 지원하기도 한다.
 
-## 출처
+## HTTP 공부 시리즈
+
+[Internet개념 - 인터넷 네트워크란](https://kimec995.github.io/posts/Internet_Network/)
+
+[Internet개념 - PORT, DNS](https://kimec995.github.io/posts/HTTP-PORT_DNS/)
+
+[URI와 웹 브라우저의 흐름](https://kimec995.github.io/posts/HTTP-URI-%ED%9D%90%EB%A6%84/)
+
+[HTTP의 특징](https://kimec995.github.io/posts/HTTP-Concept/)
+
+[HTTP 메시지](https://kimec995.github.io/posts/HTTP-message/)
+
+## 참고
+
 [강의-모든개발자를 위한 HTTP](https://www.inflearn.com/course/http-%EC%9B%B9-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/dashboard)
 
 ![image.png](\assets\img\postimg\Internet_Network\Internet_Network_00.png)
 
+[위키문서](https://ko.wikipedia.org/wiki/%ED%86%B5%ED%95%A9_%EC%9E%90%EC%9B%90_%EC%8B%9D%EB%B3%84%EC%9E%90)
 
-
-그리고 수많은 구글링
+[ietf](https://www.ietf.org/rfc/rfc3986.txt)

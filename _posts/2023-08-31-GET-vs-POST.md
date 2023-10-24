@@ -1,9 +1,9 @@
 ---
-title: GET 방식과 POST 방식의 차이와 구분
+title: GET vs POST
 author: Kimec995
 date: 2023-08-31 11:13:00 +09:00
-categories: [HTTP]
-tags: [WebFrameWork, HTTP, Method, GET, POST]
+categories: [Internet, Concept]
+tags: [Basic, Network, HTTP, Method]
 pin: true
 math: true
 mermaid: true
@@ -18,24 +18,20 @@ HTTP 요청 메서드 GET 과 POST 가 자주 눈에 띈다.
 
 >23.08.05 - 시작\
 >23.08.10 - GET/POST 구분 01\
->23.08.31 - 이동
-
-
-## 목차
-
-1. [Http 에서 Request Methods 의 역할](#1-http-에서-request-methods-의-역할)
-2. [Request Methods 의 종류](#2-request-methods-의-종류)
-3. [GET vs POST](#3-get-vs-post)
+>23.08.31 - 이동\
+>23.10.24 - 수정 및 추가
 
 
 ## 시작하기 전에
 
-자료 출처 = developer.mozilla.or\
+[자료 출처](developer.mozilla.or)
 그리고 구글링과 기타 서적자료 갈무리
 
-*   [HTTP Documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP "HTTP Documentation")
-*   [HTTP - GET Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET "HTTP - GET Methods")
-*   [HTTP - POST Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST "HTTP - POST Methods")
+[HTTP Documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP "HTTP Documentation")
+
+[HTTP - GET Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET "HTTP - GET Methods")
+
+[HTTP - POST Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST "HTTP - POST Methods")
 
 ---
 ---
@@ -48,32 +44,37 @@ HTTP 요청 메서드 GET 과 POST 가 자주 눈에 띈다.
 
 - **HTML**(**H**yper**t**ext **M**arkup **L**anguage) : 웹 페이지 제작을 위한 마크업 언어. 구조와 컨텐츠를 정의하여, `사용자가 볼 수 있는 화면`
 
-- **HTTP**(**H**yper**t**ext **T**ransfer **P**rotocol): 웹 페이지와 서버의 통신을 위한 프로토콜. 요청과 응답을 위주로 하며, `사용자가 볼 수 없는 화면`
+- **HTTP**(**H**yper**t**ext **T**ransfer **P**rotocol): 웹 페이지와 서버의 통신을 위한 프로토콜. 요청과 응답을 위주로 하며, `사용자가 볼 수 없는 화면` [정리링크](https://kimec995.github.io/posts/HTTP-Concept/)
 
 정도이다.
 
 웹 브라우저와 웹 서버 간의 동작을 포함해 이 둘을 요약하면
 
+---
+요청
+
 1. **웹 브라우저**에서 HTML을 렌더하여 화면이 표시된다.
 
-2. 클릭이나, 텍스트 입력을 하면 HTML은 HTTP 생성을 유도한다.
+2. 클릭이나, 텍스트 입력을 하면 HTML은 HTTP 생성을 유도.
 
-3. **웹 브라우저**에서 이벤트를 이용해 HTTP를 생성한다.
+3. **웹 브라우저**에서 이벤트를 이용해 HTTP를 생성.
 
-4. HTTP 내부에는 데이터 요청 또는 응답이 들어있다.
-
-5. **서버**로 HTTP가 전송된다.
-
-6. **서버**에서 HTTP를 해석해 **웹 브라우저**로 전달한다.
-
-7. **웹 브라우저**에서 HTTP를 해석해 HTML을 렌더한다. (다시 1로)
-
-이렇게 된다.
+5. **서버**로 HTTP가 전송.
 
 ---
----
+응답
+
+6. **서버**에서 HTTP를 해석해 **웹 브라우저**로 전달.
+
+7. **서버**에서 응답 HTTP와 자료를 패킷으로 만들어 **웹 브라우저**로 전달.
+
+7. **웹 브라우저**에서 HTTP를 해석해 HTML을 렌더. (다시 1로)
+
+
 
 ### HTTP Request Methods 의 역할
+
+[정리링크](https://kimec995.github.io/posts/HTTP-Concept/)
 
 HTTP Request Methods(HTTP 요청 방식) 은 HTML 내부에서 정의된다.
 
@@ -81,10 +82,6 @@ HTTP Request Methods(HTTP 요청 방식) 은 HTML 내부에서 정의된다.
 
 웹 브라우저에서 서버에 요청 / 응답을 보낼 때에 사용되는 역할로,  서버는 명령어의 종류에 따라 특정 응답방식을 취한다.
 
-종류는 여러가지로, 우월한 방식은 없고 각 Methods를 적재적소에 사용하면 된다.
-
----
----
 
 ## 2. Request Methods 의 종류
 
@@ -100,10 +97,8 @@ HTTP Request Methods(HTTP 요청 방식) 은 HTML 내부에서 정의된다.
 
 보통 URL 에 쿼리문으로 요청한다.
 
-```python
-
+```
 https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=GET+Methods
-
 ```
 
 네이버 검색창에 "GET Methods" 를 검색 한 결과이다.
@@ -126,20 +121,20 @@ Cachable 특성을 가지고 있어 [캐시 생성](https://developer.mozilla.or
 
 즉, 새로고침 등 재전송 실행해도 언제나 결과가 같다.
 
+`절대경로`
+
 ---
 
 **사용 예제**
 
 - 기존의 DB에 존재하던 데이터 조회, 검색 등 보안신경X / 간단한 데이터 처리 등
 
----
----
 
 ### POST
 
 **요약.**
 
-`POST` 메서드는 주로 HTML 폼 요소를 통해 데이터가 전달된다.
+`POST` 메서드는 주로 HTML 폼 요소를 통해 데이터가 전달된다. 요청 내역을 처리한다.
 
 ---
 
@@ -173,8 +168,6 @@ HTTP 내부 Body 와 함께 전송되기 때문에 `길이의 제한이 없다.`
 
 종류가 좀 있다. 이후 포스트 작성 후 링크 걸 것
 
----
----
 
 ## 3. GET vs POST
 

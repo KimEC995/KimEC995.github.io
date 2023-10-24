@@ -104,3 +104,25 @@ HTTP/1.1의 다음 주 버전으로 성능 향상에 초점이 맞춰져 개발�
 
 #### HTTP/3
 HTTP의 최신버전 중 하나. 성능과 보안에 초점이 맞춰져 개발되었다. TCP 대신 QUIC(Quick UDP Internet Connections) 를 기반으로 더 빠르고 안전한 데이터 전송이 가능해졌다.
+
+## HTTP 공부 시리즈
+
+[Internet개념 - 인터넷 네트워크란](https://kimec995.github.io/posts/Internet_Network/)
+
+[Internet개념 - PORT, DNS](https://kimec995.github.io/posts/HTTP-PORT_DNS/)
+
+[URI와 웹 브라우저의 흐름](https://kimec995.github.io/posts/HTTP-URI-%ED%9D%90%EB%A6%84/)
+
+[HTTP의 특징](https://kimec995.github.io/posts/HTTP-Concept/)
+
+[HTTP 메시지](https://kimec995.github.io/posts/HTTP-message/)
+
+## 참고
+
+[강의-모든개발자를 위한 HTTP](https://www.inflearn.com/course/http-%EC%9B%B9-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/dashboard)
+
+![image.png](\assets\img\postimg\Internet_Network\Internet_Network_00.png)
+
+[위키문서](https://ko.wikipedia.org/wiki/%ED%86%B5%ED%95%A9_%EC%9E%90%EC%9B%90_%EC%8B%9D%EB%B3%84%EC%9E%90)
+
+[ietf](https://www.ietf.org/rfc/rfc3986.txt)
