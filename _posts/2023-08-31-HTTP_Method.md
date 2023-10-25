@@ -1,5 +1,5 @@
 ---
-title: GET vs POST
+title: HTTP Method(Get,Post)
 author: Kimec995
 date: 2023-08-31 11:13:00 +09:00
 categories: [Internet, Concept]
@@ -9,7 +9,7 @@ math: true
 mermaid: true
 image: 
   path: /assets/img/postimg/HTTP_IMG.png
-  alt: GET 방식과 POST 방식의 차이와 구분
+  alt: HTTP Method(Get,Post)
 ---
 
 HTTP 요청 메서드 GET 과 POST 가 자주 눈에 띈다.
@@ -19,22 +19,10 @@ HTTP 요청 메서드 GET 과 POST 가 자주 눈에 띈다.
 >23.08.05 - 시작\
 >23.08.10 - GET/POST 구분 01\
 >23.08.31 - 이동\
->23.10.24 - 수정 및 추가
+>23.10.24 - 수정 및 추가\
+>23.10.25 - 내용 보강
 
 
-## 시작하기 전에
-
-[자료 출처](developer.mozilla.or)
-그리고 구글링과 기타 서적자료 갈무리
-
-[HTTP Documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP "HTTP Documentation")
-
-[HTTP - GET Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET "HTTP - GET Methods")
-
-[HTTP - POST Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST "HTTP - POST Methods")
-
----
----
 
 ## 1. HTTP 에서 Request Methods 의 역할
 
@@ -162,7 +150,7 @@ HTTP 내부 Body 와 함께 전송되기 때문에 `길이의 제한이 없다.`
 
 - 기존의 DB에 존재하던 데이터 수정, 추가, 삭제 등 복잡/ 민감/ 길이가 긴 데이터 처리.
 
-* * *
+
 
  ### 그 외
 
@@ -173,6 +161,17 @@ HTTP 내부 Body 와 함께 전송되기 때문에 `길이의 제한이 없다.`
 
 GET 방식과 POST 방식은 아래와 같은 기준으로 나뉜다.
 
-\[ 요청에 대한 처리 로직에서 `데이터 변경`이 이루어지는가? \]
+[ 요청에 대한 처리 로직에서 `데이터 변경`이 이루어지는가? ]
 
 즉, 데이터를 수정/ 생성 / 삭제 하는 과정의 여부(CRUD 중 R과 CUD)가 두 방식을 나누는 것이다.
+
+## 자료출처
+
+[자료 출처](developer.mozilla.or)
+그리고 구글링과 기타 서적자료 갈무리
+
+[HTTP Documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP "HTTP Documentation")
+
+[HTTP - GET Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET "HTTP - GET Methods")
+
+[HTTP - POST Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST "HTTP - POST Methods")
