@@ -1,7 +1,7 @@
 ---
 title: OMV5 트러블슈팅
 author: Kimec995
-date: 2023-10-30 14:00:00 +09:00
+date: 2025-10-30 14:00:00 +09:00
 categories: [Troubleshooting, Error]
 tags: [Troubleshooting, OpenMediaVault, RaspberryPi, NAS, Server]
 pin: true
