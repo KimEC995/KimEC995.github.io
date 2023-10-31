@@ -1,7 +1,7 @@
 ---
 title: JetsonNano OS와 환경설정
 author: Kimec995
-date: 2023-10-31 15:00:00 +09:00
+date: 2023-11-01 16:00:00 +09:00
 categories: [Jetson]
 tags: [Jetson, Developer_Kit]
 pin: true
@@ -176,10 +176,10 @@ OPEN 하고 로그인 하면
 
 작업 할 PC와 Jetson보드를 동일 네트워크에 연결한다.
 
-근데 네트워크 문제가 발생했다... 이 부분은 네트워크 해결 후 마저 작성하자ㅠㅠ
+와! 연결이 안된다~~!
+
+
 
 ## 참고
 
 [엔비디아 공식홈페이지: Get Started with Jetson Nano](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-2gb-devkit#prepare)
-
-[초기설정](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-2gb-devkit#setup)
