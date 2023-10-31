@@ -155,17 +155,9 @@ field-name에는 대소문자 구분이 없다.
 
 HTTP 전송에 필요한 모든 부가정보가 포함되어있다. ex) 메시지 바디 내용, 크기, 클라이언트 정보등등등. 표준 헤더가 너무 많고 필요시 임의 헤더 추가도 가능하다.
 
-## HTTP 공부 시리즈
+## 네트워크 공부
 
-[Internet개념 - 인터넷 네트워크란](https://kimec995.github.io/posts/Internet_Network/)
-
-[Internet개념 - PORT, DNS](https://kimec995.github.io/posts/HTTP-PORT_DNS/)
-
-[URI와 웹 브라우저의 흐름](https://kimec995.github.io/posts/HTTP-URI-%ED%9D%90%EB%A6%84/)
-
-[HTTP의 특징](https://kimec995.github.io/posts/HTTP-Concept/)
-
-[HTTP 메시지](https://kimec995.github.io/posts/HTTP-message/)
+[목록](https://kimec995.github.io/categories/internet/)
 
 ## 참고
 

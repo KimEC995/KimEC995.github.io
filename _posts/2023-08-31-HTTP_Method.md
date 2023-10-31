@@ -1,5 +1,5 @@
 ---
-title: HTTP Method(Get,Post)
+title: HTTP Methods(Get,Post)
 author: Kimec995
 date: 2023-08-31 11:13:00 +09:00
 categories: [Internet, Concept]
@@ -14,55 +14,19 @@ image:
 
 HTTP 요청 메서드 GET 과 POST 가 자주 눈에 띈다.
 
-얼추 무엇을 하는지는 감으로만 알았지, 정확한 정의가 무엇인지 알아보기 위해 포스팅 한다.
+HTTP 메서드엔 어떤 종류가 있고 어떤 일을 할까.
 
 >23.08.05 - 시작\
 >23.08.10 - GET/POST 구분 01\
 >23.08.31 - 이동\
 >23.10.24 - 수정 및 추가\
->23.10.25 - 내용 보강
-
-
+>23.10.30 - 내용 보강, 수정
 
 ## 1. HTTP 에서 Request Methods 의 역할
 
-### HTML과 HTTP의 차이는?
+[HTTP의 특징](https://kimec995.github.io/posts/HTTP-Concept/)
 
-시작하기 전 간단하게 HTML과 HTTP의 차이를 짚고 넘어가자.
-
-- **HTML**(**H**yper**t**ext **M**arkup **L**anguage) : 웹 페이지 제작을 위한 마크업 언어. 구조와 컨텐츠를 정의하여, `사용자가 볼 수 있는 화면`
-
-- **HTTP**(**H**yper**t**ext **T**ransfer **P**rotocol): 웹 페이지와 서버의 통신을 위한 프로토콜. 요청과 응답을 위주로 하며, `사용자가 볼 수 없는 화면` [정리링크](https://kimec995.github.io/posts/HTTP-Concept/)
-
-정도이다.
-
-웹 브라우저와 웹 서버 간의 동작을 포함해 이 둘을 요약하면
-
----
-요청
-
-1. **웹 브라우저**에서 HTML을 렌더하여 화면이 표시된다.
-
-2. 클릭이나, 텍스트 입력을 하면 HTML은 HTTP 생성을 유도.
-
-3. **웹 브라우저**에서 이벤트를 이용해 HTTP를 생성.
-
-5. **서버**로 HTTP가 전송.
-
----
-응답
-
-6. **서버**에서 HTTP를 해석해 **웹 브라우저**로 전달.
-
-7. **서버**에서 응답 HTTP와 자료를 패킷으로 만들어 **웹 브라우저**로 전달.
-
-7. **웹 브라우저**에서 HTTP를 해석해 HTML을 렌더. (다시 1로)
-
-
-
-### HTTP Request Methods 의 역할
-
-[정리링크](https://kimec995.github.io/posts/HTTP-Concept/)
+[HTTP 메시지](https://kimec995.github.io/posts/HTTP-message/)
 
 HTTP Request Methods(HTTP 요청 방식) 은 HTML 내부에서 정의된다.
 
@@ -164,6 +128,10 @@ GET 방식과 POST 방식은 아래와 같은 기준으로 나뉜다.
 [ 요청에 대한 처리 로직에서 `데이터 변경`이 이루어지는가? ]
 
 즉, 데이터를 수정/ 생성 / 삭제 하는 과정의 여부(CRUD 중 R과 CUD)가 두 방식을 나누는 것이다.
+
+## 네트워크 공부
+
+[목록](https://kimec995.github.io/categories/internet/)
 
 ## 자료출처
 

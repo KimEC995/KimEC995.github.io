@@ -12,11 +12,7 @@ image:
   alt: Internet개념 -w 인터넷 네트워크란
 ---
 
-인터넷 네트워크는 전 세계적으로 연결된 컴퓨터 네트워크의 집합을 의미한다.
-
-사실 21세기를 청년층으로 살면 인터넷을 모르는게 더 어렵겠지만, 인터넷을 정의할 수 있는 사람은 얼마나 될까.
-
-이번엔 웹개발 공부를 위해 인터넷 네트워크에 대해 공부해보려 한다.
+인터넷 네트워크는 전 세계적으로 연결된 컴퓨터 네트워크의 집합을 의미한다. 사실 21세기를 청년층으로 살면 인터넷을 모르는게 더 어렵겠지만, 인터넷을 정의할 수 있는 사람은 얼마나 될까. 이번엔 웹개발 공부를 위해 인터넷 네트워크에 대해 공부해보려 한다.
 
 ## 0. 서론_인터넷의 통신
 
@@ -111,18 +107,44 @@ TCP에서는 IP에선 부족했던 PORT 정보, 전송 제어, 순서 등의 정
 
 기능이 없다면 안좋다고 생각할 수 있지만 오히려 그게 장점이다. 기능이 없기 때문에 어엄청 복잡한 TCP 튜닝보다 UDP 튜닝이 훨씬 빠르고 쉽다!
 
+## 참고)HTML과 HTTP의 차이는?
 
-## HTTP 공부 시리즈
+이름이 비슷해 두개를 붙여봤다.
 
-[Internet개념 - 인터넷 네트워크란](https://kimec995.github.io/posts/Internet_Network/)
+- **HTML**(**H**yper**t**ext **M**arkup **L**anguage) : 웹 페이지 제작을 위한 마크업 언어. 구조와 컨텐츠를 정의하여, `사용자가 볼 수 있는 화면`
 
-[Internet개념 - PORT, DNS](https://kimec995.github.io/posts/HTTP-PORT_DNS/)
+- **HTTP**(**H**yper**t**ext **T**ransfer **P**rotocol): 웹 페이지와 서버의 통신을 위한 프로토콜. 요청과 응답을 위주로 하며, `사용자가 볼 수 없는 화면` [정리링크](https://kimec995.github.io/posts/HTTP-Concept/)
 
-[URI와 웹 브라우저의 흐름](https://kimec995.github.io/posts/HTTP-URI-%ED%9D%90%EB%A6%84/)
+정도이다.
 
-[HTTP의 특징](https://kimec995.github.io/posts/HTTP-Concept/)
+> 즉 언어와 프로토콜의 차이로 이름이 `HT`로 시작한다는 것 외엔 그 어떤 공통점도 없다.
 
-[HTTP 메시지](https://kimec995.github.io/posts/HTTP-message/)
+이 둘의 과정을 요약하면.
+
+---
+요청
+
+1. **웹 브라우저**에서 HTML을 렌더하여 화면이 표시된다.
+
+2. 클릭이나, 텍스트 입력을 하면 HTML은 HTTP 생성을 유도.
+
+3. **웹 브라우저**에서 이벤트를 이용해 HTTP를 생성.
+
+5. **서버**로 HTTP가 전송.
+
+---
+응답
+
+6. **서버**에서 HTTP를 해석해 **웹 브라우저**로 전달.
+
+7. **서버**에서 응답 HTTP와 자료를 패킷으로 만들어 **웹 브라우저**로 전달.
+
+7. **웹 브라우저**에서 HTTP를 해석해 HTML을 렌더. (다시 1로)
+
+
+## 네트워크 공부
+
+[목록](https://kimec995.github.io/categories/internet/)
 
 ## 참고
 
@@ -133,3 +155,5 @@ TCP에서는 IP에선 부족했던 PORT 정보, 전송 제어, 순서 등의 정
 [위키문서](https://ko.wikipedia.org/wiki/%ED%86%B5%ED%95%A9_%EC%9E%90%EC%9B%90_%EC%8B%9D%EB%B3%84%EC%9E%90)
 
 [ietf](https://www.ietf.org/rfc/rfc3986.txt)
+
+[Difference between HTTP and HTML](https://www.tutorialsmate.com/2020/07/http-vs-https.html)
