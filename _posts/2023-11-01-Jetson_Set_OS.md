@@ -1,7 +1,7 @@
 ---
 title: JetsonNano OS와 환경설정
 author: Kimec995
-date: 2023-11-01 16:00:00 +09:00
+date: 2023-11-01 10:00:00 +09:00
 categories: [Jetson]
 tags: [Jetson, Developer_Kit]
 pin: true
