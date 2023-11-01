@@ -178,7 +178,68 @@ OPEN 하고 로그인 하면
 
 와! 연결이 안된다~~!
 
+테스터기로 찍어보니 케이블이 단선된걸 확인 -> 교체
 
+### 1. IP 확인
+
+Jetson환경에서
+
+**우측 하단의 인터넷** -> **`Wired connection`** 설정
+
+이후 터미널에서
+
+```bash
+ifconfig
+```
+
+![image.png](\assets\img\postimg\Jetson\Jetson_Nano_18.png)
+
+IP 주소를 확인한다. LAN케이블로 연결해서 eth0의 정보를 보면 된다.
+
+### 2. SSH연결
+
+터미널 명령어
+
+```bash
+ssh 계정명@IP주소
+```
+로 연결해도 되고
+
+[PuTTY](https://www.putty.org/) 로 연결해도 되는데 개인적으로 PuTTY가 편해서 이거로 연결.
+
+![image.png](\assets\img\postimg\Jetson\Jetson_Nano_17.png)
+
+OPEN을 누르면 연결된다.
+
+IP, PW 등 입력하면 연결 완료!
+
+## 헤드리스 VS SSH
+
+두 방법을 비교해보고 싶어졌다.
+
+뭐로 비교해볼까 고민해보니 리눅스의 `htop` 커멘드가 생각났다. 시스템의 실시간 리소스 사용 상태를 모니터링하는 명령어로 CPU 사용률, 메모리 사용량, 프로세스 정보 등을 확인할 수 있다. `top` 커멘드와 비슷하지만 좀 더 직관적인 인터페이스를 제공한다.
+
+내 Jetson보드엔 해당 명령어가 설치되지 않았어서 설치 먼저
+
+```bash
+sudo apt-get install htop
+```
+
+이후 명령하면된다.
+
+```bash
+htop
+```
+
+![image.png](\assets\img\postimg\Jetson\Jetson_Nano_19.png)
+
+![image.png](\assets\img\postimg\Jetson\Jetson_Nano_20.png)
+
+상단이 SSH, 하단이 헤드리스 연결이다.
+
+어플리케이션이 동작하지 않아서 일까. 차이는 있지만 시스템에 영향을 미칠 정도는 아닌 것으로 보인다.
+
+이후 프로젝트에서 다시 한번 테스트해야겠다.
 
 ## 참고
 
