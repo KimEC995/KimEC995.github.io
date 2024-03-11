@@ -1,7 +1,7 @@
 ---
 title: OpenCV를 이용한 카메라 화면 선명도 측정 비교
 author: Kimec995
-date: 2024-03-11 14:00:00 +09:00
+date: 2024-03-11 09:00:00 +09:00
 categories: [OpenCV]
 tags: [OpenCV, Linux, Jetson]
 pin: true
@@ -52,14 +52,14 @@ std::cout << "이미지 흐림 정도: " << blurriness << std::endl;
 ### 실험1. 카메라 4개를 동시에 측정하기
 별 생각 없이 4개 동시에 측정 해 봤다.
 
-![image.png](/\assets\img\postimg\CV_Calc_Blur\OpenCV_Calc_Blur_001.png)
+![image.png](\assets\img\postimg\CV_Calc_Blur\OpenCV_Calc_Blur_001.png)
 
 이미지에도 적혀 있지만 그래프가 들쭉 날쭉 하는건 그때 그때 손으로 돌려본거라 큰 분포 확인 용이었다.
 
 제일 왼쪽 카메라는 전체적으로 분포가 낮고 중간 오른쪽 카메라는 분포가 높은 편 인건가? 왼쪽 카메라 값이 신경 쓰여 두 개씩 비교했다.
 
 ### 실험2. 카메라 2개 비교하기(1 vs 2)
-![image.png](/\assets\img\postimg\CV_Calc_Blur\OpenCV_Calc_Blur_002.png)
+![image.png](\assets\img\postimg\CV_Calc_Blur\OpenCV_Calc_Blur_002.png)
 
 실험2 부터 실험 방법을 고정했다.
 
@@ -67,7 +67,7 @@ std::cout << "이미지 흐림 정도: " << blurriness << std::endl;
 2번 카메라 복구가 오래 걸린 이유는 화면이 작아서 잘 안보였다..
 
 ### 실험3. 카메라 2개 비교하기(1 vs 3)
-![image.png](/\assets\img\postimg\CV_Calc_Blur\OpenCV_Calc_Blur_003.png)
+![image.png](\assets\img\postimg\CV_Calc_Blur\OpenCV_Calc_Blur_003.png)
 
 첫 번째 실험에서 3번 카메라의 값이 1번에 비해 지나치게 높아 걱정했으나 실험 방법을 바꾸니 안정된 모습을 보인다.
 마찬가지로 카메라 3번 또한 화면이 작아 1번에 비해 결과값이 높다.
@@ -101,12 +101,12 @@ double blurriness = stddev.val[0] * stddev.val[0];
 ### 실험1. 카메라 4개를 동시에 측정하기
 마찬가지로 카메라 4개를 동시에 출력했다.
 
-![image.png](/\assets\img\postimg\CV_Calc_Blur\OpenCV_Calc_Blur_004.png)
+![image.png](\assets\img\postimg\CV_Calc_Blur\OpenCV_Calc_Blur_004.png)
 
 한 개씩 출력할 땐 응답률이 좋았다.
 
 ### 실험2. 카메라 2개 비교하기(1 vs 2)
-![image.png](/\assets\img\postimg\CV_Calc_Blur\OpenCV_Calc_Blur_005.png)
+![image.png](\assets\img\postimg\CV_Calc_Blur\OpenCV_Calc_Blur_005.png)
 
 두 개씩 확인하면 응답률이 매우 떨어지고 결과 값도 안 이쁘다.
 
