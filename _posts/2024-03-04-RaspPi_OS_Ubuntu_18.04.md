@@ -9,7 +9,7 @@ math: true
 mermaid: true
 image: 
   path: /assets/img/postimg/RaspberryPi_IMG.png
-  alt: 라즈베리파이 OS
+  alt: 라즈베리파이 OS Ubuntu 18.04
 ---
 라즈베리 파이 모델 3B에 Ubuntu 18.04를 설치했다.
 

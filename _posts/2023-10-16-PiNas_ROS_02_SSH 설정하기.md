@@ -1,5 +1,5 @@
 ---
-title: 토이프로젝트)PiNas_02_SSH 설정하기
+title: PiNas_ROS_02_SSH 설정하기
 author: Kimec995
 date: 2023-10-16 16:00:00 +09:00
 categories: [ToyProject, PiNas]

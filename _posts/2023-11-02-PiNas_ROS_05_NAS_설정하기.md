@@ -1,5 +1,5 @@
 ---
-title: 토이프로젝트)PiNas_05_OMV6 설치하기
+title: PiNas_ROS_05_NAS_설정하기
 author: Kimec995
 date: 2023-11-02 15:00:00 +09:00
 categories: [ToyProject, PiNas]
@@ -9,7 +9,7 @@ math: true
 mermaid: true
 image: 
   path: /assets/img/postimg/RaspberryPi_NAS/RaspberryPi_NAS_000.png
-  alt: 토이프로젝트)PiNas_05_OMV6 설치하기
+  alt: PiNas_ROS_05_NAS_설정하기
 ---
 23년 10월 30일. OpenMediaVault(이하OMV)를 설치하려고 했었다.
 
