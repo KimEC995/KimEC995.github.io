@@ -109,7 +109,7 @@ ffplay udp://송신 주소:동일포트
 ## 결과
 송신 후 3-10초의 딜레이가 있다. 프레임 도달 타이밍에 따라 다르다.
 
-![image.png](/\assets\img\postimg\Streaming\Streaming_001.png)
+![image.png](\assets\img\postimg\Streaming\Streaming_001.png)
 
 만약 프레임이 도달하지 않았다면 메시지는
 ```powershell

@@ -1,7 +1,7 @@
 ---
 title: 00_About PiNas
 author: Kimec995
-date: 2024-03-25 15:00:00 +09:00
+date: 2024-03-22 15:00:00 +09:00
 categories: [ToyProject, PiNas]
 tags: [RaspberryPi, ToyProject, NAS, Server, Developer_Kit]
 pin: true
@@ -22,10 +22,10 @@ image:
 
 # Log
 - 라즈비안) 01. 재료 준비 및 OS 설치 [링크](https://kimec995.github.io/posts/PiNas_ROS_01_%EC%A4%80%EB%B9%84%ED%95%98%EA%B8%B0&-OS-%EC%84%A4%EC%B9%98/)
-- 라즈비안) 02. SSH 연결 [링크](https://kimec995.github.io/posts/PiNas_ROS_01_%EC%A4%80%EB%B9%84%ED%95%98%EA%B8%B0&-OS-%EC%84%A4%EC%B9%98/)
-- 라즈비안) 03. HDD in Raspbian [링크](https://kimec995.github.io/posts/PiNas_ROS_01_%EC%A4%80%EB%B9%84%ED%95%98%EA%B8%B0&-OS-%EC%84%A4%EC%B9%98/)
-- 라즈비안) 04. 네트워크 설정 [링크](https://kimec995.github.io/posts/PiNas_ROS_01_%EC%A4%80%EB%B9%84%ED%95%98%EA%B8%B0&-OS-%EC%84%A4%EC%B9%98/)
-- 라즈비안) 05. OMV 설치 [링크](https://kimec995.github.io/posts/PiNas_ROS_05_NAS_%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/)
+- 라즈비안) 02. SSH 연결 [링크](https://kimec995.github.io/posts/PiNas_ROS_02_SSH%EC%97%B0%EA%B2%B0/)
+- 라즈비안) 03. HDD in Raspbian [링크](https://kimec995.github.io/posts/PiNas_ROS_03_HDDinRaspbian/)
+- 라즈비안) 04. 네트워크 설정 [링크](https://kimec995.github.io/posts/PiNas_ROS_04_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC_%EC%84%A4%EC%A0%95/)
+- 라즈비안) 05. OMV 설치 [링크](https://kimec995.github.io/posts/PiNas_ROS_05_OMV%EC%84%A4%EC%B9%98/)
 
 ---
 

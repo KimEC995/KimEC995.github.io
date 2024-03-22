@@ -16,7 +16,7 @@ MySQL을 배웠었다. 이번엔 PostgreSQL을 배워볼 예정이다. 사실 �
 
 둘 다 SQL이기 때문에 큰 차이는 없지만, 굳이 더 배워두는 이유는 시장 점유율 때문이다.
 
-![image.png](/\assets\img\postimg\SQL_PostgreSQL\PostgreSQL_00.png)
+![image.png](\assets\img\postimg\SQL_PostgreSQL\PostgreSQL_00.png)
 
 [출처](https://db-engines.com/en/ranking)
 

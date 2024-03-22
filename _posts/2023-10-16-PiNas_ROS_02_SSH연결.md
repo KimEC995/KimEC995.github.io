@@ -14,7 +14,7 @@ image:
 # PiNas
 - 라즈베리 파이 SSH 연결
 
-- PiNas 전체 목록 [링크]
+- PiNas 전체 목록 [링크](https://kimec995.github.io/posts/ToyPorject_PiNas/)
 
 > 23.10.16 작성
 
@@ -36,7 +36,7 @@ su root
 
 이제 root 계정으로 접속했다.
 
-![image.png](/\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_14.png)
+![image.png](\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_14.png)
 
 ## 2. 인터넷 확인
 
@@ -46,7 +46,7 @@ root 계정에 접속하던 안하던 상관없다.
 ~# ifconfig
 ```
 
-![image.png](/\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_15.png)
+![image.png](\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_15.png)
 
 현재 라즈베리 파이에 랜선을 연결해 `eth0`의 inet이 보인다.
 
@@ -61,19 +61,19 @@ root 계정에 접속하던 안하던 상관없다.
 sudo raspi-config
 ```
 
-![image.png](/\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_16.png)
+![image.png](\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_16.png)
 
 `Interface Options` 에 접속,
 
-![image.png](/\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_17.png)
+![image.png](\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_17.png)
 
 마침 `SSH`가 첫 번째에 있다.
 
-![image.png](/\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_18.png)
+![image.png](\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_18.png)
 
 SSH연결 주의문. 그냥 `YES`
 
-![image.png](/\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_19.png)
+![image.png](\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_19.png)
 
 됐다.
 
@@ -101,7 +101,7 @@ vi sshd_config
 nano sshd_config
 ```
 
-![image.png](/\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_20.png)
+![image.png](\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_20.png)
 
 기본 Port는 22이지만, 보안이 엄청 취약해지니까 주석은 놔두고 아래에 새 Port 번호를 부여하자.
 
@@ -136,7 +136,7 @@ PW: raspberry
 
 PuTTY 실행.[다운받기](https://www.putty.org/)
 
-![image.png](/\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_21.png)
+![image.png](\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_21.png)
 
 1. [인터넷 확인하기](#2-인터넷-확인하기2.) 에서 찾은 IP 주소를 입력
 
@@ -146,7 +146,7 @@ PuTTY 실행.[다운받기](https://www.putty.org/)
 
 4. Open 누르기(확인하고 싶으면 Load)
 
-![image.png](/\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_13.png)
+![image.png](\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_13.png)
 
 메인 PC에서 접속!
 

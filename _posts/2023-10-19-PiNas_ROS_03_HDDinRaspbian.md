@@ -15,7 +15,7 @@ image:
 - 하드 드라이브 설정
 - 참고) 굳이 안해도 OMV쓰면 내부에서 해결 가능
 
-- PiNas 전체 목록 [링크]
+- PiNas 전체 목록 [링크](https://kimec995.github.io/posts/ToyPorject_PiNas/)
 
 > 23.10.16 작성
 > 23.10.16 - 구매\
@@ -33,15 +33,15 @@ image:
 
 [라즈베리파이 Datasheet](https://datasheets.raspberrypi.com/rpi4/raspberry-pi-4-datasheet.pdf)
 
-![image.png](/\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_22.png)
+![image.png](\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_22.png)
 
 생각이 부족했다.. 일반적으로 SATA to USB 케이블은 두 가지가 있다. 하나는 USB 통합, 또 하나는 외부전원 케이블이다. 외부전원을 이용하면 하나의 하드는 하나의 전원을 사용한다. 만약 동일 방법으로 3~4개의 하드를 연결하면 최소 3~4개의 전원이 필요하다. SAS컨트롤러를 사용할 수 없고, DAS는 너무 비싸고 통합 케이블은 확장이 어렵다. 기왕이면 하나의 전원에서 2~3개의 SATA 포트가 나오면 한다. 그렇다고 시중에서 파는 PiNas용 독을 구매하자니 돈은 돈대로 쓰는 것 같고 공부도 안되는 느낌이라 지양하고 싶다. 어쩔 수 없다. 지금은 우선 하나만 연결하고, 케이스 만들 때 커넥터를 같이 만들어야겠다. 전원을 묶고 포트를 만들자.
 
-![image.png](/\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_23.png)
+![image.png](\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_23.png)
 
 인식불가문제.. 이거저거 해봤지만 하드드라이브가 너무 오래되어 물리적으로 망가졌다... 고치는데 시간이 더 걸릴 것 같으니 다른 하드로 교체.
 
-![image.png](/\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_24.png)
+![image.png](\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_24.png)
 
 포멧하고 새 파티션 부여했다. 열어보니 Ubuntu가 들어있던데 예전에 외주할 때 썼었나?
 
@@ -54,11 +54,11 @@ image:
 ```bash
 sudo lsblk
 ```
-![image.png](/\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_26.png)
+![image.png](\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_26.png)
 
 그 다음 하드를 물리고 다시 확인하면
 
-![image.png](/\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_27.png)
+![image.png](\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_27.png)
 
 잘 인식된다!
 `sda` 하단에 두 개의 파티션이 인식된다. 근데 다시 생각해보니 OS사용은 다른 카드에서 하는데 파티션을 두개로 나눌 필요가 있었나? 하나로 합치자.
@@ -67,11 +67,11 @@ sudo lsblk
 sudo fdisk /dev/sda
 ```
 
-![image.png](/\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_28.png)
+![image.png](\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_28.png)
 
 우선 파티션 두 개를 지우고
 
-![image.png](/\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_29.png)
+![image.png](\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_29.png)
 
 최대크기로 하나를 생성한다.
 
@@ -79,7 +79,7 @@ sudo fdisk /dev/sda
 
 확인하면 
 
-![image.png](/\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_30.png)
+![image.png](\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_30.png)
 
 하나의 하드에 하나의 파티션!
 
@@ -87,7 +87,7 @@ sudo fdisk /dev/sda
 sudo blkid
 ```
 
-![image.png](/\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_31.png)
+![image.png](\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_31.png)
 
 파티션의 PARTUUID는 있지만, UUID는 인식되지 않는다. 포멧하자.
 
@@ -97,7 +97,7 @@ sudo mkfs.ext4 /dev/sda1
 
 ext4 형식으로 포멧
 
-![image.png](/\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_32.png)
+![image.png](\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_32.png)
 
 UUID 생성!
 
@@ -159,7 +159,7 @@ fstab 파일을 수정해 자동 마운트를 설정하자.
 #!/bin/bash
 pi@raspberrypi:~ $ sudo vi /etc/fstab
 ```
-![image.png](/\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_33.png)
+![image.png](\assets\img\postimg\RaspberryPi_NAS\RaspberryPi_NAS_33.png)
 
 UUID와 경로, 설정을 적는다.
 
