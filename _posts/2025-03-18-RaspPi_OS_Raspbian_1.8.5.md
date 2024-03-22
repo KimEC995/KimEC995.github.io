@@ -1,7 +1,7 @@
 ---
 title: RaspberryPi 3 Model B Raspbian v1.8.5
 author: Kimec995
-date: 2024-03-18 09:00:00 +09:00
+date: 2025-03-18 09:00:00 +09:00
 categories: [Linux]
 tags: [RaspberryPi, Linux, Developer_Kit]
 pin: true
