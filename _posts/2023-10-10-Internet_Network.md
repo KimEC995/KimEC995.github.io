@@ -8,7 +8,7 @@ pin: true
 math: true
 mermaid: true
 image: 
-  path: /assets/img/postimg/Internet_Network_IMG.png
+  path: /assets/img/postimg/Internet_Network/Internet_Network_00.png
   alt: Internet개념 -w 인터넷 네트워크란
 ---
 

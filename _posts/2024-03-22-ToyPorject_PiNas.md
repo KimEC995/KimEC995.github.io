@@ -30,5 +30,6 @@ image:
 ---
 
 - 번외) 케이싱 [링크](https://kimec995.github.io/posts/PiNas_ROS_%EB%B2%88%EC%99%B8_%EC%BC%80%EC%9D%B4%EC%8B%B1/)
+- 번외) 케이싱 [링크](https://kimec995.github.io/posts/PiNas_ROS_%EB%B2%88%EC%99%B8_%EC%BC%80%EC%9D%B4%EC%8B%B1/)
 
 ---

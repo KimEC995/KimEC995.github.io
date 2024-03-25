@@ -8,7 +8,7 @@ pin: true
 math: true
 mermaid: true
 image: 
-  path: /assets/img/postimg/Internet_Network_IMG.png
+  path: /assets/img/postimg/Internet_Network/Internet_Network_00.png
   alt: HTTP 메시지
 ---
 
