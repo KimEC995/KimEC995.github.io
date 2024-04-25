@@ -120,6 +120,5 @@ YPlaneArrMat = cv::Mat(HEIGHT, WIDTH, CV_8UC1, YPlaneArrPtr);
 이래저래 잘 쓴다.
 
 ## 테스트
-QR코드 읽는 테스트와 선명도 측정 테스트를 진행했다. 나중에 포스팅 해야지..
 
-아무튼 잘 동작 한다.
+- 선명도 측정: [링크](https://kimec995.github.io/posts/OpenCV_Calc_Blur/)
