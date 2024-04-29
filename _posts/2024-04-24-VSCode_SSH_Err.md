@@ -65,7 +65,6 @@ VSCode 1.86 이하의 exe 파일로 다시 설치한 후 버전을 고정한다.
 
 ![image.png](\assets\img\postimg\999_ETC\VSCODE_SSH_Err_06.png)
 
-
 기존의 VSCode 파일을 싹 날린 후 다시 설치하고.
 
 1.  `Ctrl` + `,` 단축키로 VSCode의 설정 파일에 접근한다.

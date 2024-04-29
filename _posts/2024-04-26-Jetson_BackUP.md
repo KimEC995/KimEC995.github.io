@@ -61,7 +61,6 @@ sudo ./flash.sh -r -k APP -G <clone>.img jetson-agx-xavier-devkit mmcblk0p1
 ### 파일 이동
 Nvidia JetPack(BSP)참고
 ![image.png](\assets\img\postimg\Jetson\Jetson_BackUP02.png)
-
 생성 된 `.img` 파일을 BSP로 옮김
 
 ```bash
