@@ -8,24 +8,24 @@ pin: true
 math: true
 mermaid: true
 image: 
-  path: /assets/img/postimg/999_ETC/VSCode.png
+  path: /assets/img/postimg/ETC/VSCode.png
   alt: Visual Studio SSH Remote 업데이트 문제
 ---
 블로그 글은 많이 늦었지만..
 
 24.02.03 기준 SSH Remote가 업데이트했었다.
 
-![image.png](\assets\img\postimg\999_ETC\VSCODE_SSH_Err_01.png)
+![image.png](\assets\img\postimg\ETC\VSCODE_SSH_Err_01.png)
 
 이로 인해 Ubuntu 18.04(사용중인 HOST) 에선 지원이 안된다
-![image.png](\assets\img\postimg\999_ETC\VSCODE_SSH_Err_02.png)
+![image.png](\assets\img\postimg\ETC\VSCODE_SSH_Err_02.png)
 
 Ubuntu 18.04에서 SSH를 계속 사용하기 위해 사용할 수 있는 방법은 두 가지.
 
 # 0. 기본 설정
 [VSCode-SSH Docs](https://code.visualstudio.com/docs/remote/ssh)
 단, 두 방법 모두 VSCode의 버전이 1.86 이하여야 한다.
-![image.png](\assets\img\postimg\999_ETC\VSCODE_SSH_Err_03.png)
+![image.png](\assets\img\postimg\ETC\VSCODE_SSH_Err_03.png)
 
 확인은 `Help` -> `About` 에서 확인.
 
@@ -44,7 +44,7 @@ drwx------  6 kimec kimec 4096  2월  5 10:49 data/
 drwx------  2 kimec kimec 4096  2월  5 10:49 extensions/
 ```
 ## 1. SSH Remote Pre버전
-![image.png](\assets\img\postimg\999_ETC\VSCODE_SSH_Err_04.png)
+![image.png](\assets\img\postimg\ETC\VSCODE_SSH_Err_04.png)
 
 이미지는 버전 낮춘 모습이라 버튼이 활성화 되지 않았는데, `Switch to Release Version` 버튼 대신 PreRelease 관련 버튼이 있다.
 
@@ -61,25 +61,25 @@ drwx------  2 kimec kimec 4096  2월  5 10:49 extensions/
 VSCode 1.86 이하의 exe 파일로 다시 설치한 후 버전을 고정한다.
 [VSCode 릴리즈 노트](https://code.visualstudio.com/updates/v1_86)
 
-![image.png](\assets\img\postimg\999_ETC\VSCODE_SSH_Err_05.png)
+![image.png](\assets\img\postimg\ETC\VSCODE_SSH_Err_05.png)
 
-![image.png](\assets\img\postimg\999_ETC\VSCODE_SSH_Err_06.png)
+![image.png](\assets\img\postimg\ETC\VSCODE_SSH_Err_06.png)
 
 기존의 VSCode 파일을 싹 날린 후 다시 설치하고.
 
 1.  `Ctrl` + `,` 단축키로 VSCode의 설정 파일에 접근한다.
-![image.png](\assets\img\postimg\999_ETC\VSCODE_SSH_Err_07.png)
+![image.png](\assets\img\postimg\ETC\VSCODE_SSH_Err_07.png)
 
 2. `Update` 를 검색한다.
-![image.png](\assets\img\postimg\999_ETC\VSCODE_SSH_Err_08.png)
+![image.png](\assets\img\postimg\ETC\VSCODE_SSH_Err_08.png)
 
 3. Auto Update 탭을 `None` 한다.
-![image.png](\assets\img\postimg\999_ETC\VSCODE_SSH_Err_09.png)
+![image.png](\assets\img\postimg\ETC\VSCODE_SSH_Err_09.png)
 
 이 부분은 Extensions 업데이트 관련인데, 난 SSH Remote 업데이트로 이 문제가 났으니 그냥 None 했다. 아래의 Mode를 None하면 당연히 Extensions 업데이트로 인한 VSCode 업데이트도 막히겠으나 혹시 모르니 선택함.
 
 4. Mode 탭 또한 `None` 한다.
-![image.png](\assets\img\postimg\999_ETC\VSCODE_SSH_Err_10.png)
+![image.png](\assets\img\postimg\ETC\VSCODE_SSH_Err_10.png)
 
 5. Mode 탭을 수정하면 재부팅 메시지가 나온다. 재부팅.
 
