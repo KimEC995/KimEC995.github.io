@@ -63,9 +63,9 @@ cd WiringPi
 ## 핀맵
 출처: [공식홈페이지](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#raspberry-pi-3-model-b)
 
-![image.png](..\assets\img\postimg\RPSF4DnM\RPSF_GPIO_WiringPi_01.png)
+![image.png](\assets\img\postimg\RPSF4DnM\RPSF_GPIO_WiringPi_01.png)
 
-![image.png](..\assets\img\postimg\RPSF4DnM\RPSF_GPIO_WiringPi_02.png)
+![image.png](\assets\img\postimg\RPSF4DnM\RPSF_GPIO_WiringPi_02.png)
 
 ## 자주 쓰는 명령어들
 ### help
@@ -73,7 +73,7 @@ cd WiringPi
 ```bash
 gpio -h
 ```
-![image.png](..\assets\img\postimg\RPSF4DnM\RPSF_GPIO_WiringPi_03.png)
+![image.png](\assets\img\postimg\RPSF4DnM\RPSF_GPIO_WiringPi_03.png)
 
 ### readall
 현재 핀 상황 읽기
@@ -81,7 +81,7 @@ gpio -h
 gpio readall
 ```
 
-![image.png](..\assets\img\postimg\RPSF4DnM\RPSF_GPIO_WiringPi_04.png)
+![image.png](\assets\img\postimg\RPSF4DnM\RPSF_GPIO_WiringPi_04.png)
 
 가운데 `Physical` 줄은 물리적 표현.
 현재 모드는 전부 `IN`으로 설정 되어 있다.
@@ -96,7 +96,7 @@ gpio readall
 ```
 헤더 파일, 소스 파일 위치: `설치했던 경로/WiringPi/wiringPi`
 
-![image.png](..\assets\img\postimg\RPSF4DnM\RPSF_GPIO_WiringPi_05.png)
+![image.png](\assets\img\postimg\RPSF4DnM\RPSF_GPIO_WiringPi_05.png)
 
 ### 라이브러리 setup
 ```cpp
@@ -127,7 +127,7 @@ LED를 1초 간격으로 On / Off 로 테스트 한다.
 - LED
 - 1K Res
 
-![image.png](..\assets\img\postimg\RPSF4DnM\RPSF_GPIO_WiringPi_06.png)
+![image.png](\assets\img\postimg\RPSF4DnM\RPSF_GPIO_WiringPi_06.png)
 
 
 ### 소프트웨어
@@ -199,7 +199,7 @@ g++ -o LEDTEST GPIOPi.cpp -lwiringPi
 `pinMode(LED, OUTPUT)` 이후 다시 `gpio readall`을 하면 처음엔 `IN` 모드였던 wPi8번이 `OUT`으로 바뀐 걸 확인할 수 있다.
 
 - 이전
-![image.png](..\assets\img\postimg\RPSF4DnM\RPSF_GPIO_WiringPi_04.png)
+![image.png](\assets\img\postimg\RPSF4DnM\RPSF_GPIO_WiringPi_04.png)
 
 - 이후
-![image.png](..\assets\img\postimg\RPSF4DnM\RPSF_GPIO_WiringPi_07.png)
+![image.png](\assets\img\postimg\RPSF4DnM\RPSF_GPIO_WiringPi_07.png)
