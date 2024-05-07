@@ -157,23 +157,23 @@ gpio readall
 
 int main()
 {
-    if(wiringPiSetup() == -1)
-    {
-        std::cout << "Status: -1" << std::endl;
-        return -1;
-    }
+  if(wiringPiSetup() == -1)
+  {
+    std::cout << "Status: -1" << std::endl;
+    return -1;
+  }
 
-    pinMode(LED, OUTPUT);
-    for(int i = 0; i < 100; i++)
-    {
-        digitalWrite(LED, 1);
-        delay(1000);
-        std::cout << "LED ON" << std::endl;
-        digitalWrite(LED, 0);
-        delay(1000);
-        std::cout << "LED OFF" << std::endl;
-    }
-    return 0;
+  pinMode(LED, OUTPUT);
+  for(int i = 0; i < 100; i++)
+  {
+    digitalWrite(LED, 1);
+    delay(1000);
+    std::cout << "LED ON" << std::endl;
+    digitalWrite(LED, 0);
+    delay(1000);
+    std::cout << "LED OFF" << std::endl;
+  }
+  return 0;
 }
 ```
 
@@ -199,7 +199,9 @@ g++ -o LEDTEST GPIOPi.cpp -lwiringPi
 `pinMode(LED, OUTPUT)` 이후 다시 `gpio readall`을 하면 처음엔 `IN` 모드였던 wPi8번이 `OUT`으로 바뀐 걸 확인할 수 있다.
 
 - 이전
+
 ![image.png](\assets\img\postimg\RPSF4DnM\RPSF_GPIO_WiringPi_04.png)
 
 - 이후
+
 ![image.png](\assets\img\postimg\RPSF4DnM\RPSF_GPIO_WiringPi_07.png)
