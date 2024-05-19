@@ -12,7 +12,7 @@ image:
   alt: NVCC Compile WorkFlow
 ---
 
-CUDA는 `.nvcc` 로 컴파일된다. [[CUDA 프로그램의 구조와 흐름]] 에 따르면 `.c`, `.cpp`와 `.cu` 가 동시에 컴파일 되는 모습으로 보이는데 사실일까.
+CUDA는 `.nvcc` 로 컴파일된다. [CUDA 프로그램의 구조와 흐름](https://kimec995.github.io/posts/CUDA_00_03/) 에 따르면 `.c`, `.cpp`와 `.cu` 가 동시에 컴파일 되는 모습으로 보이는데 사실일까.
 
 # 컴파일 전체 플로우
 
