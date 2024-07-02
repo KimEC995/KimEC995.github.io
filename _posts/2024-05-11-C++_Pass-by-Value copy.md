@@ -17,8 +17,6 @@ image:
 
 ![image.png](\assets\img\postimg\Cpp_Basic\pass-by-value-img.png)
 
-![[Pasted image 20231126172800.png]]
-
 - 데이터는 **복사되어 전달**된다.
 
 - 전달된 인수는 함수를 통해 변화되지 않음

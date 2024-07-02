@@ -45,4 +45,4 @@ void scale_number(int& num)
 ```bash
 100
 ```
-원래 Cpp의 변수는 [[Pass-by-Value(Cpp)]] 특성을 가져 원래 변수를 수정할 수 없지만 참조자를 사용하면 원래 변수를 수정할 수 있다.
+원래 Cpp의 변수는 [Pass-by-Value(Cpp)](https://kimec995.github.io/posts/C++_Pass-by-Value/) 특성을 가져 원래 변수를 수정할 수 없지만 참조자를 사용하면 원래 변수를 수정할 수 있다.
