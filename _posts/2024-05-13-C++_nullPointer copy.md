@@ -15,11 +15,11 @@ image:
 
 포인터 자료형의 기본값. 기존의
 ```c++
-int* int_ptr = 0;    // int 타입 변수인지 Ptr변수인지 모름
+int* int_ptr = 0;    // int 타입 변수인지 Ptr변수인지 `*`을 봐야함
 
 int* int_ptr = nullptr;    //Ptr 변수구나~
 ```
-보다 가독성이 좋다.
+보다 가독성이 좋다.(직관적이다)
 ### 예시
 ```c++
 int* int_ptr = nullptr;
