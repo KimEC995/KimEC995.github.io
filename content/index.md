@@ -1,6 +1,6 @@
 ---
 title: 김은채 블로그
-draft: true
+draft: false
 aliases:
   - 블로그소개
 ---
