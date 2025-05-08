@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "dev/null",
+    pageTitle: "dev/null", // 블로그 이름 수정
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -23,8 +23,8 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
+        header: "Noto Sans KR", // 폰트 수정
+        body: "Noto Sans KR",
         code: "IBM Plex Mono",
       },
       colors: {

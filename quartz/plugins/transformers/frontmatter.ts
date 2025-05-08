@@ -7,6 +7,7 @@ import { FilePath, FullSlug, getFileExtension, slugifyFilePath, slugTag } from "
 import { QuartzPluginData } from "../vfile"
 import { i18n } from "../../i18n"
 
+
 export interface Options {
   delimiters: string | [string, string]
   language: "yaml" | "toml"
