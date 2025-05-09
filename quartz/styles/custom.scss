@@ -6,22 +6,24 @@
 // 밝을 때 색상 (기본 정의)
 :root {
     --color-text-main: #2e4537b8;
-    --color-text-strong: #2e4537;
+    --color-text-strong: #1f3227;
     --color-heading: #2e4537;
     --color-subheading: #2e4537b8;
     --color-link-bg: #9cb0a37b;
+    --color-Obsidian-link: #e49320;
+    --color-codeblock-bg: #d8e4de80;
   }
   
   // 어두울 때 색상만 덮어씌우기
-  html[data-theme='dark'] {
-    :root {
+  html[saved-theme='dark']  {
       --color-text-main: #cfe8dc ;
       --color-text-strong: #d9f5e2 ;
-      --color-heading: #d9f5e2 ;
-      --color-subheading: #cfe8dc ;
+      --color-heading: #9ccbbf ;
+      --color-subheading: #7da69a ;
       --color-link-bg: #2e4537a0 ;
+      --color-Obsidian-link: #e4922085;
+      --color-codeblock-bg: #2e453780;
     }
-  }
 
 // ========================================
 // 본문 기본 스타일
@@ -37,9 +39,13 @@ h1 {
     font-weight: 700;
   }
   
-  h2, h3, h4 {
-    color: var(--color-subheading);
-  }
+h2, h3, h4 {
+  color: var(--color-subheading);
+}
+
+h2.page-title{
+  color: var(--color-heading);
+}
 
 h4 {
   font-size: 18px !important;
@@ -59,6 +65,7 @@ h4 {
 a.folder-title {
   font-size: 16px;
   color: var(--color-text-main) !important;
+  font-weight: lighter !important;
 }
 
 ul.content {
@@ -79,7 +86,7 @@ ul.content li a {
 }
 
 ul.content li a:hover {
-  color: #84a59d !important;
+  color: var(--color-text-strong) !important;
 }
 
 // ========================================
@@ -115,16 +122,16 @@ ul.content li a:hover {
 // ========================================
 // 옵시디언 링크 스타일
 // ========================================
-
-a.internal.alias {
-  color: var(--color-text-strong);
+a.internal.alias, a.internal:not(.tag-link){
+  color: var(--color-Obsidian-link);
   font-size: 15px;
-  background-color: var(--color-link-bg);
+  background-color: transparent;
   text-decoration: underline;
 }
 
-a.internal.alias:hover {
-  color: #213127;
+a.internal.alias:hover,
+a.internal:not(.tag-link):hover {
+  color: #e4922085 !important;
 }
 
 // ========================================
@@ -133,4 +140,14 @@ a.internal.alias:hover {
 .toc a, .outline a {
   font-weight: normal !important;
   font-size: 15px;
+}
+
+// ========================================
+// 코드 블록 스타일
+// ========================================
+pre {
+  background-color: var(--color-codeblock-bg) !important;
+  padding: 1em;
+  border-radius: 8px;
+  overflow-x: auto;
 }
