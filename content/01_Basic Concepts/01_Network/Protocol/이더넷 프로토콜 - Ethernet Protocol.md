@@ -1,5 +1,5 @@
 ---
-title: 이더넷(Ethernet) 프로토콜
+title: 프로토콜) 이더넷(Ethernet) 프로토콜
 tags:
   - Network
   - Protocol

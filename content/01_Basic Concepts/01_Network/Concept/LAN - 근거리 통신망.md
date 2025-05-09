@@ -1,5 +1,5 @@
 ---
-title: LAN - 근거리 통신망
+title: 네트워크) LAN - 근거리 통신망
 tags:
   - Network
 aliases:

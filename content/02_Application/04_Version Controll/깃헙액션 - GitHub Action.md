@@ -1,5 +1,5 @@
 ---
-title: 깃허브 액션 - GitHub Action
+title: Git) 깃허브 액션 - GitHub Action
 tags:
   - Git
 draft: 
