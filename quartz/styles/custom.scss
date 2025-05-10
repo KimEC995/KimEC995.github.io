@@ -21,9 +21,30 @@
       --color-heading: #9ccbbf ;
       --color-subheading: #7da69a ;
       --color-link-bg: #2e4537a0 ;
-      --color-Obsidian-link: #e4922085;
+      --color-Obsidian-link: 	#3a6f65;
       --color-codeblock-bg: #2e453780;
     }
+
+// ========================================
+// 본문 루트 패스
+// ========================================
+.breadcrumb-container {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text-main);
+  opacity: 0.85;
+  margin-bottom: 8px;
+}
+
+.breadcrumb-container a {
+  text-decoration: none;
+  color: var(--color-text-main);
+}
+
+.breadcrumb-container a:hover {
+  text-decoration: underline;
+  color: #e49320;
+}
 
 // ========================================
 // 본문 기본 스타일
@@ -94,6 +115,13 @@ ul.content li a:hover {
 }
 
 // ========================================
+// 우측 그래프 스타일
+// ========================================
+.right.sidebar .graph {
+  margin-top: -50px; // <--------- 마진 탑으로 위로 올림림
+}
+
+// ========================================
 // 우측 TOC (개요) 스타일
 // ========================================
 
@@ -119,7 +147,7 @@ ul.content li a:hover {
 
 // TOC 높이 제한
 .toc.desktop-only {
-  max-height: 50vh;
+  max-height: 40vh;
   padding-right: 8px;
 }
 

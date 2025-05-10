@@ -41,7 +41,17 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer(),
   ],
   right: [
-    Component.Graph(),
+    Component.Graph({
+      localGraph: {
+        depth: 5,
+        showTags: false, // 태그도 노드로 보이게
+        scale: 0.5
+      },
+      globalGraph: {
+      depth: 2, // 전체 연결 표시
+      showTags: false,
+    }
+    }),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],

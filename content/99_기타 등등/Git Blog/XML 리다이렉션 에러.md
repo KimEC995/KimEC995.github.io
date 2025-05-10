@@ -7,6 +7,10 @@ tags:
 ---
 ![[깃블로그(14).png]]
 
+```
+this xml file does not appear to have any style information associated with it. the document tree is shown below.
+```
+
 무려 draft 가 true여서...
 
 그니까 
