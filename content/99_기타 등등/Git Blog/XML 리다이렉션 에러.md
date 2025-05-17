@@ -1,5 +1,5 @@
 ---
-title: XML 리다이렉션 에러
+title: 에러) XML 리다이렉션 에러
 tags:
   - Error
   - Bolg
