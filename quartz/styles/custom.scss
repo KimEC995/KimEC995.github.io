@@ -86,12 +86,21 @@ article table {
   margin: 3rem auto !important;
 }
 
+img {
+  border-radius: 10px;
+
+}
+
+p.img{
+  margin: 0 auto;
+}
+
 // ========================================
 // 사이드바 스타일
 // ========================================
 .sidebar.left {
-    margin-left: -3rem;
-    margin-right: 4rem;
+    margin-left: -2rem;
+    margin-right: 3rem;
 }
 
 .sidebar.right {
