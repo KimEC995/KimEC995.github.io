@@ -53,7 +53,7 @@ export const defaultContentPageLayout: PageLayout = {
     }
     }),
     Component.DesktopOnly(Component.TableOfContents()),
-    Component.Backlinks(),
+    // Component.Backlinks(),// 백링크 기능 제거
   ],
 }
 
