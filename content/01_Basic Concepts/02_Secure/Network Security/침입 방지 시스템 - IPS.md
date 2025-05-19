@@ -2,8 +2,10 @@
 title: 보안) 침입 방지 시스템 - IPS
 tags:
   - Secure
+  - Network
+aliases:
+  - IPS
 ---
- 
 연관: [[침입 탐지 시스템 - IDS|IDS]], [[방화벽 - Firewall|Firewall]], [[정보보안]]
 
 네트워크 공격에 대해 방어를 할 때 일반적으로 3가지 방법을 사용한다.

@@ -17,7 +17,7 @@ UDP 프로토콜 중 67번, 68번 포트를 사용한다.  67번은 서버용, 6
 
 주로 전문 서버 장비들이 하지만, [[00_CISCO Packet Tracer|CISCO 장비]]는 [[Router|라우터]]에서도 이 프로토콜을 사용할 수 있다.
 
-PC들은 부팅 되고 나면 [[OSI 7 Layer & TCP,IP 4 Layer|TCP/IP 네트워크]]에 참여하기 위해 자신이 사용해야 할 IP 주소 정보([[IP - Internet Protocol|IP 주소]], [[서브넷 - Subnet|Subnet Mask]], 기본 [[게이트웨이]], [[DNS|DNS 서버]])를 찾는다. PC나 Host가 지정된 [[IP - Internet Protocol|IP 주소]]를 가지는게 아니라, PC가 부팅되면 **DHCP Server**에게서 Dynamic 한 방식(자동)으로 IP 주소를 가져오는 방식. 이를 **동적 IP 주소 할당**이라고 한다.
+PC들은 부팅 되고 나면 [[OSI 7 Layer & TCP,IP 4 Layer|TCP/IP 네트워크]]에 참여하기 위해 자신이 사용해야 할 IP 주소 정보([[IP - Internet Protocol#IP의 주소|IP 주소]], [[서브넷 - Subnet|Subnet Mask]], 기본 [[게이트웨이]], [[DNS|DNS 서버]])를 찾는다. PC나 Host가 지정된 IP 주소를 가지는게 아니라, PC가 부팅되면 **DHCP Server**에게서 Dynamic 한 방식(자동)으로 IP 주소를 가져오는 방식. 이를 **동적 IP 주소 할당**이라고 한다.
 
 결국 IP 주소 배정을 자동으로 해주고, 관리의 편함을 제공하는 프로토콜.
 
