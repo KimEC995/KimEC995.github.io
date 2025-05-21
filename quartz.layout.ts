@@ -51,8 +51,9 @@ export const defaultContentPageLayout: PageLayout = {
     //   depth: 2, // 전체 연결 표시
     //   showTags: false,
     // }
-    // }),// 그래프 끄기기
-    Component.DesktopOnly(Component.TableOfContents()),
+    // }),// 그래프 끄기
+    // Component.DesktopOnly(Component.TableOfContents()),
+    Component.TableOfContents()
     // Component.Backlinks(),// 백링크 기능 제거
   ],
 }
