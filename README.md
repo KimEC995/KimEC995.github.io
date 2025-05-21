@@ -1,21 +1,18 @@
-# Quartz v4
+# 김은채 블로그
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+안녕하세요 김은채입니다.
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
-Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility and ease-of-use.
+엔지니어는 죽을 때 까지 공부해야 한다고 합니다. 그래서 배운 내용 잊지 않기 위해 블로그를 만들었습니다.
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+**블로그 안내**
+- 이 블로그는 Obsidian으로 작성된 뒤, Git 기반의 정적 블로그로 변환하여 운영되고 있습니다. 두 마크다운 엔진 간의 차이로 인해 디자인이나 표현 방식에 약간의 어긋남이 있을 수 있습니다.
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+- 위키 스타일을 지향하기 때문에 대부분의 페이지는 서로 연결되어 있어, 마우스를 올리면 관련된 다른 내용을 바로 확인하실 수 있습니다.
 
-## Sponsors
+- 내용은 지속적으로 수정되고 보완됩니다. 완전한 설명보다는 점진적인 기록에 가깝기 때문에, 오늘의 포스트가 내일도 같으리란 보장은 없습니다.
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+- 가끔 로드가 오래걸릴 수 있습니다.
 
 ---
-TEST
+**블로그 주소**
+- https://kimec995.github.io/

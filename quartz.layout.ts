@@ -41,17 +41,17 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer(),
   ],
   right: [
-    Component.Graph({
-      localGraph: {
-        depth: 5,
-        showTags: false, // 태그도 노드로 보이게
-        scale: 0.5
-      },
-      globalGraph: {
-      depth: 2, // 전체 연결 표시
-      showTags: false,
-    }
-    }),
+    // Component.Graph({
+    //   localGraph: {
+    //     depth: 5,
+    //     showTags: false, // 태그도 노드로 보이게
+    //     scale: 0.5
+    //   },
+    //   globalGraph: {
+    //   depth: 2, // 전체 연결 표시
+    //   showTags: false,
+    // }
+    // }),// 그래프 끄기기
     Component.DesktopOnly(Component.TableOfContents()),
     // Component.Backlinks(),// 백링크 기능 제거
   ],
