@@ -1,5 +1,5 @@
 ---
-title: IP) IPv4의 헤더 - IPv4 Header
+title: IP) IPv4의 헤더
 tags:
   - Network
   - Protocol
@@ -54,7 +54,7 @@ QoS와 혼잡 제어 두 가지를 다룬다.
 조각난 데이터의 상대적인 위치를 표기한다. 단위는 8바이트.
 
 #### TTL(8Bit)
-> Time To Live -> [[TTL(Network)#IP 헤더의 TTL|TTL]]
+> Time To Live -> [[TTL#IP 헤더의 TTL|TTL]]
 
 [[패킷]]의 생존 시간을 표기한다. 패킷이 폐기되지 않고 평생 네트워크를 떠돌아다니는 일(루핑)을 방지한다.
 하나의 [[Router|라우터]]를 지날 때 마다 1씩 감소하며, 0이 되는 순간 라우터는 해당 패킷을 폐기한다.
@@ -65,13 +65,10 @@ QoS와 혼잡 제어 두 가지를 다룬다.
 #### Header Checksum(16Bit)
 > [[체크섬#IPv4 헤더 체크섬|IPv4 헤더의 체크섬]]
 
-**헤더의 오류를 검출**하기 위한 필드로, 수신자가 검증 후 오류가 있으면 폐기한다. 데이터(Payload)의 오류는 검출하지 않는다.
+**헤더의 오류를 검출**하기 위한 필드로, 수신자가 검증 후 오류가 있으면 폐기한다. [[페이로드]]의 오류는 검출하지 않는다.
 
-#### Source IP Address(32Bit)
-출발지(송신자)의 [[IPv4 주소]]
-
-#### Destination IP Addredd(32Bit)
-목적지(수신자)의 [[IPv4 주소]]
+#### Source / Destination IP Address(32Bit)
+출발지(송신자) 혹은 목적지(수신자)의 [[IPv4 주소]]
 
 ---
 ## IPv4 헤더의 필드(옵션)
