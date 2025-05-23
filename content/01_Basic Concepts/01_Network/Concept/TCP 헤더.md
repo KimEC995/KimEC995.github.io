@@ -11,7 +11,7 @@ tags:
 
 [[세그먼트]]의 [[메타데이터]]를 가지고 있는 헤더. [[패킷]]의 [[페이로드]] 중 앞부분이다.
 
-중간에 있는 TCP Flag 필드를 사용해 [[HandShaking#3Way- Hand Shaking|3-Way-Handshaking]]을 할 수 있거나 혹은 [[목적지 스캐닝 기법]]에서 적극 활용할 수 있다.
+중간에 있는 TCP Flag 필드를 사용해 [[HandShaking#3Way Handshaking|3Way-Handshaking]]을 할 수 있거나 혹은 [[목적지 스캐닝 기법]]에서 적극 활용할 수 있다.
 
 최소 20바이트, 최대 60바이트 할당이 가능하다.
 

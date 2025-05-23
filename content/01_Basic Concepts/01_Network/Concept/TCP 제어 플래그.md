@@ -67,7 +67,7 @@ tags:
 ## SYN
 > Sync
 
-[[HandShaking|3-Way-Handshaking]]에서 **연결 시작을 요청할 때 사용한다.** 초기의 [[TCP 헤더#시퀀스 번호(32 Bit)|시퀀스 번호]]를 교환하는 목적.
+[[HandShaking|3Way-Handshaking]]에서 **연결 시작을 요청할 때 사용한다.** 초기의 [[TCP 헤더#시퀀스 번호(32 Bit)|시퀀스 번호]]를 교환하는 목적.
 
 ---
 ## FIN

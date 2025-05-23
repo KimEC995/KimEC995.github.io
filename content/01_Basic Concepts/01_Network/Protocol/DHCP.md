@@ -25,7 +25,7 @@ DHCP는 임대(Lease)의 서비스 이기 때문에 사용 기간 설정도 가�
 
 ---
 ## DHCP의 동작
-DHCP는 4단계 과정을 거쳐 클라이언트에게 IP 주소를 할당하는데, 이를 [[HandShaking#4Way- Hand Shaking|4 Way Hand Shaking]]이라고 한다.
+DHCP는 4단계 과정을 거쳐 클라이언트에게 IP 주소를 할당하는데, 이를 [[HandShaking#4Way Handshaking|4Way-Handshaking]]이라고 한다.
 
 ![[DHCP(1).png]]
 
