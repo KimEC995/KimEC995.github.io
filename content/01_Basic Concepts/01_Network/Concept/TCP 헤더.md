@@ -15,13 +15,18 @@ tags:
 
 중간에 있는 TCP Flag 필드를 사용해 [[HandShaking#3Way Handshaking|3Way-Handshaking]]을 할 수 있거나 혹은 [[목적지 스캐닝 기법]]에서 적극 활용할 수 있다.
 
-최소 20바이트, 최대 60바이트 할당이 가능하다.
+- 크기
+	- 기본 필드: 20Byte
+	- 옵션 필드: 40Byte 까지
+	- 최대 헤더 크기: 총 60Byte 까지
+
+일반적으로 20~32 Byte가 많이 보인다.
 
 ---
 ## TCP 헤더의 전체 구조
 > TCP Header Structure
 
-![[TCP헤더(1).png]]
+![[TCP 헤더(1).png]]
 
 옵션을 제외하고 5개의 헤더 = 9개의 필드 + 8개의 플래그 로 이루어져있다.
 
