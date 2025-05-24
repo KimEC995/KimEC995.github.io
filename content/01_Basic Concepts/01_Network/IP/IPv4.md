@@ -19,7 +19,7 @@ tags:
 ## IPv4의 구조
 > IPv4 Structure
 
-IPv4는 크게 [[IPv4 헤더]] + [[페이로드]]로 이루어져 있으며 형식은 아래와 같다.
+일반적인 네트워킹에서 IPv4는 크게 [[IPv4 헤더]] + [[페이로드]]로 이루어지며 형식은 아래와 같다.
 
 ```
 [IPv4 Header] + [Paylpad(TCP/UDP Segment)]
