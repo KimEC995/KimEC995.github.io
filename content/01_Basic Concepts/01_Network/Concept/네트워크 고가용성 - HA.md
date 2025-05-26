@@ -39,3 +39,12 @@ draft: false
 
 ![[로드 벨런싱.png]]
 
+---
+#### 게이트웨이 이중화
+> Gateway Redundancy
+
+[[게이트웨이]] 이중화는 두 가지 방법이 있다.
+
+![[HSRP(2).png]]
+
+하나는 [[CISCO]]에서 사용하는 [[HSRP]] / 하나는 국제 표준인 VRRP 이다.
