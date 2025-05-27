@@ -83,7 +83,7 @@ HSRP는 **우선 순위**에 따라 `활성 라우터(Active)`와 `대기 라우
 
 이 때 우선 순위는
 
-```cisco
+```
 Router(config-if)#standby 1 priority ?
 	<0-255> Priority value
 ```
@@ -96,7 +96,7 @@ Router(config-if)#standby 1 priority ?
 
 대기하던 라우터는 `Tracking`을 통해 활성화 된다. 이 때 기존의 라우터 `priority`값은
 
-```cisco
+```
 // Active 라우터의 값 변화 - 다운 전
 Router(config)#do sh standby
 ...
@@ -155,11 +155,11 @@ ACT / STN 라우터 모두 동일한 설정을 한다. 이후 이 둘은 우선�
 #### IP 부여
 가장 먼저 가상 게이트웨이 IP를 부여한다.
 
-```cisco
+```
 standby [HSRP 그룹 번호] [가상 게이트웨이 IP]
 ```
 
-```cisco
+```
 Router(config-if)#standby 1 ip 192.168.10.100
 ```
 
@@ -168,7 +168,7 @@ Router(config-if)#standby 1 ip 192.168.10.100
 
 선점형 선언을 하는 이유는 만약 ACT 라우터가 다운될 경우 STN 라우터가 게이트웨이 역할을 수행하는데, 이후 ACT 라우터가 복구되면 다시 ACT 라우터가 **게이트웨이 역할을 탈환**하기 위해 필요하다.
 
-```cisco
+```
 standby [HSRP 그룹 번호] preempt
 ```
 
