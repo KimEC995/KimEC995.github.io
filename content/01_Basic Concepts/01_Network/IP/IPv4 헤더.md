@@ -3,6 +3,7 @@ title: IP) IPv4의 헤더
 tags:
   - Network
   - Protocol
+  - IP
 ---
 연관: [[패킷]], [[IPv4]], [[메타데이터]]
 

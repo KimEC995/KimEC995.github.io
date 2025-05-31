@@ -4,8 +4,7 @@ tags:
   - Protocol
   - Network
 ---
- 
-연관: [[OSI 7 Layer & TCP,IP 4 Layer#응용 계층|응용 계층(7층)]], [[IP - Internet Protocol|IP 주소]]
+연관: [[OSI 7 Layer & TCP,IP 4 Layer#응용 계층|응용 계층(L7)]], [[IP - Internet Protocol|IP 주소]]
 
 # DHCP
 > Dynamic Host Configuration Protocol
@@ -14,7 +13,7 @@ tags:
 - **포트 번호**
 	- 서버: 67
 	- 클라이언트: 68
-- **계층**: [[OSI 7 Layer & TCP,IP 4 Layer#Application Layer|응용 계층(L7)]]
+- **계층**: [[OSI 7 Layer & TCP,IP 4 Layer#응용 계층|응용 계층(L7)]]
 - **관련 공격**
 	- [[DoS, DDoS 공격#DHCP Starvation|DHCP 기아 공격]]
 	- [[DHCP 스푸핑]]

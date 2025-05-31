@@ -5,7 +5,6 @@ tags:
   - Protocol
   - PDU
 ---
- 
 연관: [[패킷]], [[프레임 - Frame|프레임]], [[프로토콜]], [[OSI 7 Layer & TCP,IP 4 Layer|OSI 7계층]]
 
 # PDU

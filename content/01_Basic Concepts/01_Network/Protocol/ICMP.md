@@ -1,6 +1,8 @@
 ---
 title: 프로토콜) ICMP
 tags:
+  - Network
+  - IP
 ---
 연관: [[OSI 7 Layer & TCP,IP 4 Layer#네트워크 계층|네트워크 계층(L3)]], [[IP - Internet Protocol|IP]]
 
