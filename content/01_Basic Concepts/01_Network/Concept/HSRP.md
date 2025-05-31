@@ -11,6 +11,9 @@ tags:
 # HSRP
 > Hot Standby Router Protocol
 
+- **프로토콜**: [[IP - Internet Protocol|IP]]
+- **관련 계층**: [[OSI 7 Layer & TCP,IP 4 Layer#네트워크 계층|네트워크 계층(L3)]]
+
 일반적인 네트워크에선 [[게이트웨이]]를 하나로 설정한다.
 
 ![[HSRP(1).png]]
