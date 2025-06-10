@@ -7,7 +7,7 @@ aliases:
   - 영역파일
   - zone
 ---
-연관: [[DNS]], [[00_BIND|BIND]]
+연관: [[DNS]], [[BIND]]
 
 # 영역 파일
 > Zone File
